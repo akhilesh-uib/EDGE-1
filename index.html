@@ -1,127 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>EDGE-1:The European Dataset for Groundwater
-Drought Evaluation</title>
+    <meta charset="UTF-8">
+    <title>Groundwater SGI Viewer</title>
 
-<!-- Leaflet -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- Leaflet -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
 
-<style>
-  body { font-family: Arial, sans-serif; margin: 0; }
-  h2 { padding: 10px; }
-  #map { height: 500px; }
-  #info {
-    padding: 12px;
-    border-top: 1px solid #ccc;
-  }
-  table {
-    border-collapse: collapse;
-    width: 100%;
-  }
-  th, td {
-    border: 1px solid #ccc;
-    padding: 6px;
-    text-align: center;
-  }
-  th {
-    background: #f4f4f4;
-  }
-</style>
+    <!-- Plotly -->
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+
+    <!-- PapaParse -->
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        #map {
+            height: 50vh;
+        }
+        #info {
+            padding: 10px;
+        }
+        #plot {
+            height: 40vh;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        td, th {
+            border: 1px solid #ccc;
+            padding: 4px 8px;
+        }
+    </style>
 </head>
-
 <body>
 
-<h2>EDGE-1: The European Dataset for Groundwater Drought Evaluation</h2>
+<h2 style="padding:10px;">Groundwater Standardized Index (SGI)</h2>
 
 <div id="map"></div>
-
-<div id="info">
-  <b>Click a station to see drought summary</b>
-  <div id="drought-table"></div>
-</div>
+<div id="info"></div>
+<div id="plot"></div>
 
 <script>
+    const map = L.map("map").setView([60, 10], 5);
 
-// --------------------------------------------------
-// Load data
-// --------------------------------------------------
-let metadata, droughts;
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: "© OpenStreetMap contributors"
+    }).addTo(map);
 
-Promise.all([
-  fetch("data/metadata.json").then(r => r.json()),
-  fetch("data/drought_summary.json").then(r => r.json())
-]).then(data => {
-  metadata = data[0];
-  droughts = data[1];
-  initMap();
-});
+    let droughtData = [];
+    let sgiData = [];
 
-// --------------------------------------------------
-// Initialize map
-// --------------------------------------------------
-function initMap() {
+    // Load drought summary
+    Papa.parse("data/drought_summary.csv", {
+        download: true,
+        header: true,
+        complete: function (res) {
+            droughtData = res.data;
+        }
+    });
 
-  let map = L.map("map").setView([56, 14], 5);
+    // Load SGI time series
+    Papa.parse("data/sgi_timeseries.csv", {
+        download: true,
+        header: true,
+        complete: function (res) {
+            sgiData = res.data;
+        }
+    });
 
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    attribution: "© OpenStreetMap contributors"
-  }).addTo(map);
+    // Load metadata and build map
+    Papa.parse("data/metadata.csv", {
+        download: true,
+        header: true,
+        complete: function (res) {
+            res.data.forEach(station => {
+                if (!station.latitude || !station.longitude) return;
 
-  metadata.forEach(st => {
+                const marker = L.circleMarker(
+                    [station.latitude, station.longitude],
+                    { radius: 6, fillColor: "blue", color: "black", fillOpacity: 0.8 }
+                ).addTo(map);
 
-    let marker = L.circleMarker(
-      [st.Latitude, st.Longitude],
-      { radius: 6, color: "blue" }
-    ).addTo(map);
+                marker.on("click", () => showStation(station.station_name));
+            });
+        }
+    });
 
-    marker.bindPopup(st.station_name);
+    function showStation(stationName) {
+        // --- Drought summary ---
+        const droughts = droughtData.filter(
+            d => d.station_name === stationName
+        );
 
-    marker.on("click", () => showDroughtSummary(st.station_name));
-  });
-}
+        let html = `<h3>${stationName}</h3>`;
 
-// --------------------------------------------------
-// Show drought table
-// --------------------------------------------------
-function showDroughtSummary(station) {
+        if (droughts.length > 0) {
+            html += "<table><tr><th>Start</th><th>End</th><th>Duration (months)</th><th>Magnitude</th><th>Min SGI</th></tr>";
+            droughts.forEach(d => {
+                html += `<tr>
+                    <td>${d.start}</td>
+                    <td>${d.end}</td>
+                    <td>${d.duration_months}</td>
+                    <td>${d.magnitude}</td>
+                    <td>${d.lowest_sgi}</td>
+                </tr>`;
+            });
+            html += "</table>";
+        } else {
+            html += "<p>No drought summary available.</p>";
+        }
 
-  let dr = droughts.filter(d => d.Station === station);
-  let container = document.getElementById("drought-table");
+        document.getElementById("info").innerHTML = html;
 
-  if (dr.length === 0) {
-    container.innerHTML = `<p><b>${station}</b>: No droughts detected.</p>`;
-    return;
-  }
+        // --- SGI time series ---
+        const series = sgiData.filter(
+            s => s.station_name === stationName
+        );
 
-  let html = `<h3>${station}</h3>`;
-  html += `<table>
-    <tr>
-      <th>Start</th>
-      <th>End</th>
-      <th>Duration (months)</th>
-      <th>Magnitude</th>
-      <th>Lowest SGI</th>
-      <th>Date of Lowest SGI</th>
-    </tr>`;
+        const trace = {
+            x: series.map(s => s.date),
+            y: series.map(s => parseFloat(s.sgi)),
+            mode: "lines",
+            name: "SGI"
+        };
 
-  dr.forEach(d => {
-    html += `<tr>
-      <td>${d.Start}</td>
-      <td>${d.End}</td>
-      <td>${d.Duration_months}</td>
-      <td>${d.Magnitude}</td>
-      <td>${d.Lowest_SGI}</td>
-      <td>${d.Lowest_SGI_date}</td>
-    </tr>`;
-  });
+        const layout = {
+            title: `SGI Time Series – ${stationName}`,
+            xaxis: { title: "Date" },
+            yaxis: { title: "SGI" }
+        };
 
-  html += `</table>`;
-  container.innerHTML = html;
-}
-
+        Plotly.newPlot("plot", [trace], layout);
+    }
 </script>
 
 </body>
