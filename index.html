@@ -88,7 +88,10 @@ function parseCSV(text) {
         const values = line.split(",");
         let obj = {};
         header.forEach((h, i) => obj[h] = values[i]);
-        obj.SGI = parseFloat(obj.SGI);
+
+        // IMPORTANT: lowercase 'sgi'
+        obj.sgi = parseFloat(obj.sgi);
+
         return obj;
     });
 }
@@ -168,14 +171,20 @@ function showDroughtSummary(station) {
 // --------------------------------------------------
 // SGI time series plot
 // --------------------------------------------------
+<script>
 function plotSGI(station) {
 
     const data = sgiData
         .filter(d => d.station_name === station)
         .sort((a, b) => new Date(a.date) - new Date(b.date));
 
+    if (data.length === 0) {
+        console.warn("No SGI data for station:", station);
+        return;
+    }
+
     const labels = data.map(d => d.date);
-    const values = data.map(d => d.SGI);
+    const values = data.map(d => d.sgi);  // ← lowercase
 
     const ctx = document.getElementById("sgi-chart").getContext("2d");
 
@@ -188,7 +197,7 @@ function plotSGI(station) {
         data: {
             labels: labels,
             datasets: [{
-                label: "SGI",
+                label: "Standardized Groundwater Index (SGI)",
                 data: values,
                 borderColor: "steelblue",
                 borderWidth: 1.5,
@@ -198,6 +207,10 @@ function plotSGI(station) {
         },
         options: {
             responsive: true,
+            interaction: {
+                mode: "index",
+                intersect: false
+            },
             scales: {
                 x: {
                     title: { display: true, text: "Date" }
@@ -212,6 +225,5 @@ function plotSGI(station) {
     });
 }
 </script>
-
 </body>
 </html>
