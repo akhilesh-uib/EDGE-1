@@ -4,40 +4,21 @@
     <meta charset="UTF-8">
     <title>Groundwater SGI Viewer</title>
 
-    <!-- Leaflet CSS -->
-    <link
-        rel="stylesheet"
-        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    />
+    <!-- Leaflet -->
+    <link rel="stylesheet"
+          href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
     <!-- Plotly -->
     <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
 
-    <!-- PapaParse -->
-    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
-
-    <!-- Leaflet JS -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        #map {
-            height: 500px;
-            width: 100%;
-        }
-
-        #info {
-            padding: 10px;
-        }
-
-        #plot {
-            height: 400px;
-            width: 100%;
-        }
+        body { margin: 0; font-family: Arial, sans-serif; }
+        #map { height: 500px; width: 100%; }
+        #info { padding: 10px; }
+        #plot { height: 400px; width: 100%; }
+        table { border-collapse: collapse; }
+        th, td { border: 1px solid #ccc; padding: 4px 8px; }
     </style>
 </head>
 
@@ -50,9 +31,25 @@
 <div id="plot"></div>
 
 <script>
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", async function () {
 
-    console.log("DOM loaded, Leaflet:", typeof L);
+    // ---------------- LOAD JSON ----------------
+    const metadata = await fetch("data/metadata.json").then(r => r.json());
+    const droughts = await fetch("data/drought_summary.json").then(r => r.json());
+
+    // ---------------- LOAD SGI CSV ----------------
+    const sgiText = await fetch("data/sgi_timeseries.csv").then(r => r.text());
+    const sgiLines = sgiText.trim().split("\n");
+    const sgiHeader = sgiLines.shift().split(",");
+
+    const sgiData = sgiLines.map(line => {
+        const parts = line.split(",");
+        return {
+            station_name: parts[0],
+            date: parts[1],
+            sgi: parseFloat(parts[2])
+        };
+    });
 
     // ---------------- MAP ----------------
     const map = L.map("map").setView([60, 10], 5);
@@ -61,54 +58,66 @@ document.addEventListener("DOMContentLoaded", function () {
         attribution: "© OpenStreetMap contributors"
     }).addTo(map);
 
-    let droughtData = [];
-    let sgiData = [];
+    // ---------------- ADD STATIONS ----------------
+    metadata.forEach(st => {
+        const marker = L.circleMarker(
+            [st.latitude, st.longitude],
+            { radius: 6, fillColor: "blue", color: "black", fillOpacity: 0.8 }
+        ).addTo(map);
 
-    // ---------------- LOAD DROUGHT SUMMARY ----------------
-    Papa.parse("data/drought_summary.csv", {
-        download: true,
-        header: true,
-        complete: res => droughtData = res.data
+        marker.on("click", () => showStation(st.station_name));
     });
 
-    // ---------------- LOAD SGI ----------------
-    Papa.parse("data/sgi_timeseries.csv", {
-        download: true,
-        header: true,
-        complete: res => sgiData = res.data
-    });
-
-    // ---------------- LOAD METADATA ----------------
-    Papa.parse("data/metadata.csv", {
-        download: true,
-        header: true,
-        complete: function (res) {
-
-            res.data.forEach(st => {
-                if (!st.latitude || !st.longitude) return;
-
-                const marker = L.circleMarker(
-                    [parseFloat(st.latitude), parseFloat(st.longitude)],
-                    { radius: 6, fillOpacity: 0.8 }
-                ).addTo(map);
-
-                marker.on("click", () => showStation(st.station_name));
-            });
-        }
-    });
-
+    // ---------------- DISPLAY STATION ----------------
     function showStation(stationName) {
 
-        const series = sgiData.filter(
-            s => s.station_name === stationName
-        );
+        // ---- Drought summary ----
+        const rows = droughts.filter(d => d.station_name === stationName);
+
+        let html = `<h3>${stationName}</h3>`;
+
+        if (rows.length > 0) {
+            html += `
+                <table>
+                    <tr>
+                        <th>Start</th>
+                        <th>End</th>
+                        <th>Duration (months)</th>
+                        <th>Magnitude</th>
+                        <th>Min SGI</th>
+                    </tr>
+            `;
+
+            rows.forEach(d => {
+                html += `
+                    <tr>
+                        <td>${d.start}</td>
+                        <td>${d.end}</td>
+                        <td>${d.duration_months}</td>
+                        <td>${d.magnitude}</td>
+                        <td>${d.lowest_sgi}</td>
+                    </tr>
+                `;
+            });
+
+            html += "</table>";
+        } else {
+            html += "<p>No drought summary available.</p>";
+        }
+
+        document.getElementById("info").innerHTML = html;
+
+        // ---- SGI plot ----
+        const series = sgiData.filter(s => s.station_name === stationName);
 
         Plotly.newPlot("plot", [{
             x: series.map(s => s.date),
-            y: series.map(s => parseFloat(s.sgi)),
-            mode: "lines"
+            y: series.map(s => s.sgi),
+            mode: "lines",
+            name: "SGI"
         }], {
-            title: stationName,
+            title: `SGI Time Series – ${stationName}`,
+            xaxis: { title: "Date" },
             yaxis: { title: "SGI" }
         });
     }
