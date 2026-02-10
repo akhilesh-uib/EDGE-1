@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Groundwater SGI Viewer</title>
 
-    <!-- Leaflet -->
+    <!-- Leaflet CSS -->
     <link
         rel="stylesheet"
         href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -16,38 +16,57 @@
     <!-- PapaParse -->
     <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
 
+    <!-- Leaflet JS (MUST be before your script) -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
         }
-        #map {
-            height: 50vh;
+
+        h2 {
+            padding: 10px;
         }
+
+        #map {
+            height: 500px;
+            width: 100%;
+        }
+
         #info {
             padding: 10px;
         }
+
         #plot {
-            height: 40vh;
+            height: 400px;
+            width: 100%;
         }
+
         table {
             border-collapse: collapse;
         }
-        td, th {
+
+        th, td {
             border: 1px solid #ccc;
             padding: 4px 8px;
+            font-size: 14px;
         }
     </style>
 </head>
+
 <body>
 
-<h2 style="padding:10px;">Groundwater Standardized Index (SGI)</h2>
+<h2>Groundwater Standardized Index (SGI)</h2>
 
 <div id="map"></div>
 <div id="info"></div>
 <div id="plot"></div>
 
 <script>
+    console.log("Script started");
+
+    // ---------------- MAP ----------------
     const map = L.map("map").setView([60, 10], 5);
 
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -57,44 +76,68 @@
     let droughtData = [];
     let sgiData = [];
 
-    // Load drought summary
+    // ---------------- LOAD DROUGHT SUMMARY ----------------
     Papa.parse("data/drought_summary.csv", {
         download: true,
         header: true,
         complete: function (res) {
+            console.log("Drought summary loaded:", res.data.length);
             droughtData = res.data;
+        },
+        error: function (err) {
+            console.error("Drought summary error:", err);
         }
     });
 
-    // Load SGI time series
+    // ---------------- LOAD SGI TIME SERIES ----------------
     Papa.parse("data/sgi_timeseries.csv", {
         download: true,
         header: true,
         complete: function (res) {
+            console.log("SGI time series loaded:", res.data.length);
             sgiData = res.data;
+        },
+        error: function (err) {
+            console.error("SGI time series error:", err);
         }
     });
 
-    // Load metadata and build map
+    // ---------------- LOAD METADATA & ADD MARKERS ----------------
     Papa.parse("data/metadata.csv", {
         download: true,
         header: true,
         complete: function (res) {
-            res.data.forEach(station => {
-                if (!station.latitude || !station.longitude) return;
+            console.log("Metadata loaded:", res.data.length);
+
+            res.data.forEach(function (st) {
+                if (!st.latitude || !st.longitude) return;
 
                 const marker = L.circleMarker(
-                    [station.latitude, station.longitude],
-                    { radius: 6, fillColor: "blue", color: "black", fillOpacity: 0.8 }
+                    [parseFloat(st.latitude), parseFloat(st.longitude)],
+                    {
+                        radius: 6,
+                        fillColor: "blue",
+                        color: "black",
+                        weight: 1,
+                        fillOpacity: 0.8
+                    }
                 ).addTo(map);
 
-                marker.on("click", () => showStation(station.station_name));
+                marker.on("click", function () {
+                    showStation(st.station_name);
+                });
             });
+        },
+        error: function (err) {
+            console.error("Metadata error:", err);
         }
     });
 
+    // ---------------- DISPLAY STATION DATA ----------------
     function showStation(stationName) {
-        // --- Drought summary ---
+        console.log("Clicked station:", stationName);
+
+        // ---- Drought table ----
         const droughts = droughtData.filter(
             d => d.station_name === stationName
         );
@@ -102,16 +145,29 @@
         let html = `<h3>${stationName}</h3>`;
 
         if (droughts.length > 0) {
-            html += "<table><tr><th>Start</th><th>End</th><th>Duration (months)</th><th>Magnitude</th><th>Min SGI</th></tr>";
+            html += `
+                <table>
+                    <tr>
+                        <th>Start</th>
+                        <th>End</th>
+                        <th>Duration (months)</th>
+                        <th>Magnitude</th>
+                        <th>Min SGI</th>
+                    </tr>
+            `;
+
             droughts.forEach(d => {
-                html += `<tr>
-                    <td>${d.start}</td>
-                    <td>${d.end}</td>
-                    <td>${d.duration_months}</td>
-                    <td>${d.magnitude}</td>
-                    <td>${d.lowest_sgi}</td>
-                </tr>`;
+                html += `
+                    <tr>
+                        <td>${d.start}</td>
+                        <td>${d.end}</td>
+                        <td>${d.duration_months}</td>
+                        <td>${d.magnitude}</td>
+                        <td>${d.lowest_sgi}</td>
+                    </tr>
+                `;
             });
+
             html += "</table>";
         } else {
             html += "<p>No drought summary available.</p>";
@@ -119,7 +175,7 @@
 
         document.getElementById("info").innerHTML = html;
 
-        // --- SGI time series ---
+        // ---- SGI plot ----
         const series = sgiData.filter(
             s => s.station_name === stationName
         );
