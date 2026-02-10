@@ -2,127 +2,123 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Groundwater SGI Viewer</title>
+    <title>SGI Drought Explorer</title>
 
-    <!-- Leaflet -->
-    <link rel="stylesheet"
-          href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
-    <!-- Plotly -->
-    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <!-- Leaflet CSS -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-sA+e2atLYH5H2G8pU5pKj9xX4MHDL/95B2S/bR5pTK0="
+        crossorigin=""
+    />
 
     <style>
-        body { margin: 0; font-family: Arial, sans-serif; }
-        #map { height: 500px; width: 100%; }
-        #info { padding: 10px; }
-        #plot { height: 400px; width: 100%; }
-        table { border-collapse: collapse; }
-        th, td { border: 1px solid #ccc; padding: 4px 8px; }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        #map {
+            width: 100%;
+            height: 90vh;
+        }
     </style>
 </head>
 
 <body>
 
-<h2 style="padding:10px;">Groundwater Standardized Index (SGI)</h2>
-
+<h2>Sweden SGI Drought Characteristics</h2>
 <div id="map"></div>
-<div id="info"></div>
-<div id="plot"></div>
+
+<!-- Leaflet JS (MUST come before your script) -->
+<script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-o9N1j8Mk0bNfX2YpWQb0pNi9E+9IY0p3pLtE6xA0F0M="
+    crossorigin=""
+></script>
 
 <script>
-document.addEventListener("DOMContentLoaded", async function () {
-
-    // ---------------- LOAD JSON ----------------
-    const metadata = await fetch("data/metadata.json").then(r => r.json());
-    const droughts = await fetch("data/drought_summary.json").then(r => r.json());
-
-    // ---------------- LOAD SGI CSV ----------------
-    const sgiText = await fetch("data/sgi_timeseries.csv").then(r => r.text());
-    const sgiLines = sgiText.trim().split("\n");
-    const sgiHeader = sgiLines.shift().split(",");
-
-    const sgiData = sgiLines.map(line => {
-        const parts = line.split(",");
-        return {
-            station_name: parts[0],
-            date: parts[1],
-            sgi: parseFloat(parts[2])
-        };
-    });
-
-    // ---------------- MAP ----------------
-    const map = L.map("map").setView([60, 10], 5);
+    // -------------------------------
+    // 1. Initialize map
+    // -------------------------------
+    const map = L.map("map").setView([60, 15], 5);
 
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        attribution: "© OpenStreetMap contributors"
+        attribution: "&copy; OpenStreetMap contributors"
     }).addTo(map);
 
-    // ---------------- ADD STATIONS ----------------
-    metadata.forEach(st => {
-        const marker = L.circleMarker(
-            [st.latitude, st.longitude],
-            { radius: 6, fillColor: "blue", color: "black", fillOpacity: 0.8 }
-        ).addTo(map);
+    // -------------------------------
+    // 2. Load metadata + drought JSON
+    // -------------------------------
+    Promise.all([
+        fetch("data/metadata.json").then(r => r.json()),
+        fetch("data/drought_characteristics.json").then(r => r.json())
+    ])
+    .then(([metadata, droughts]) => {
 
-        marker.on("click", () => showStation(st.station_name));
-    });
+        // -------------------------------
+        // 3. Group droughts by station
+        // -------------------------------
+        const droughtByStation = {};
 
-    // ---------------- DISPLAY STATION ----------------
-    function showStation(stationName) {
-
-        // ---- Drought summary ----
-        const rows = droughts.filter(d => d.station_name === stationName);
-
-        let html = `<h3>${stationName}</h3>`;
-
-        if (rows.length > 0) {
-            html += `
-                <table>
-                    <tr>
-                        <th>Start</th>
-                        <th>End</th>
-                        <th>Duration (months)</th>
-                        <th>Magnitude</th>
-                        <th>Min SGI</th>
-                    </tr>
-            `;
-
-            rows.forEach(d => {
-                html += `
-                    <tr>
-                        <td>${d.start}</td>
-                        <td>${d.end}</td>
-                        <td>${d.duration_months}</td>
-                        <td>${d.magnitude}</td>
-                        <td>${d.lowest_sgi}</td>
-                    </tr>
-                `;
-            });
-
-            html += "</table>";
-        } else {
-            html += "<p>No drought summary available.</p>";
-        }
-
-        document.getElementById("info").innerHTML = html;
-
-        // ---- SGI plot ----
-        const series = sgiData.filter(s => s.station_name === stationName);
-
-        Plotly.newPlot("plot", [{
-            x: series.map(s => s.date),
-            y: series.map(s => s.sgi),
-            mode: "lines",
-            name: "SGI"
-        }], {
-            title: `SGI Time Series – ${stationName}`,
-            xaxis: { title: "Date" },
-            yaxis: { title: "SGI" }
+        droughts.forEach(d => {
+            if (!droughtByStation[d.Station]) {
+                droughtByStation[d.Station] = [];
+            }
+            droughtByStation[d.Station].push(d);
         });
-    }
 
-});
+        // -------------------------------
+        // 4. Add markers
+        // -------------------------------
+        metadata.forEach(station => {
+
+            const stationName = station.station_name;
+            const lat = station.Latitude;
+            const lon = station.Longitude;
+
+            let popupHTML = `<b>${stationName}</b><br/>`;
+
+            if (droughtByStation[stationName]) {
+                popupHTML += "<hr/><b>Drought events:</b><br/>";
+
+                droughtByStation[stationName].forEach(d => {
+                    popupHTML += `
+                        <div style="margin-bottom:6px;">
+                            <b>Start:</b> ${d.Start}<br/>
+                            <b>End:</b> ${d.End}<br/>
+                            <b>Duration:</b> ${d.Duration_months} months<br/>
+                            <b>Magnitude:</b> ${d.Magnitude}<br/>
+                            <b>Lowest SGI:</b> ${d.Lowest_SGI}
+                            (${d.Lowest_SGI_date})
+                        </div>
+                        <hr/>
+                    `;
+                });
+
+            } else {
+                popupHTML += "<i>No major drought events</i>";
+            }
+
+            L.circleMarker([lat, lon], {
+                radius: 4,
+                color: "darkred",
+                fillColor: "red",
+                fillOpacity: 0.7
+            })
+            .addTo(map)
+            .bindPopup(popupHTML);
+        });
+    })
+    .catch(err => {
+        console.error("Error loading data:", err);
+        alert("Failed to load JSON files. Check console.");
+    });
 </script>
 
 </body>
