@@ -63,7 +63,7 @@
 <script>
 let metadata, droughts, sgiData;
 let sgiChart = null;
-
+ 
 // --------------------------------------------------
 // Load all data
 // --------------------------------------------------
@@ -78,52 +78,7 @@ Promise.all([
     initMap()
 });
     
-// --------------------------------------------------
-// Initialize map
-// --------------------------------------------------
-function initMap() {
 
-    // ----------------------------
-    // Europe bounding box
-    // ----------------------------
-    const europeBounds = [
-        [34, -10],  // southwest corner
-        [72, 40]    // northeast corner
-    ];
-
-    // Initialize map centered on Europe
-    const map = L.map("map", {
-        maxBounds: europeBounds,
-        maxBoundsViscosity: 1.0
-    }).fitBounds(europeBounds);  // automatically fits Europe bounds
-
-    // OpenStreetMap layer
-    L.tileLayer(
-        "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-        { attribution: "© OpenStreetMap contributors" }
-    ).addTo(map);
-
-    // ----------------------------
-    // Add only stations inside Europe
-    // ----------------------------
-    metadata.forEach(st => {
-        const lat = parseFloat(st.Latitude);
-        const lon = parseFloat(st.Longitude);
-        if (!lat || !lon) return;
-
-        if (
-            lat >= europeBounds[0][0] && lat <= europeBounds[1][0] &&
-            lon >= europeBounds[0][1] && lon <= europeBounds[1][1]
-        ) {
-            const marker = L.circleMarker([lat, lon], { radius: 6, color: "blue" }).addTo(map);
-            marker.bindPopup(st.station_name);
-            marker.on("click", () => {
-                showDroughtSummary(st.station_name);
-                plotSGI(st.station_name);
-            });
-        }
-    });
-}
 // --------------------------------------------------
 // CSV parser
 // --------------------------------------------------
