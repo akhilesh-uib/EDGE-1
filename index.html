@@ -78,7 +78,60 @@ Promise.all([
     initMap()
 });
     
+function initMap() {
+    // Europe bounding box (lat, lng): south, west, north, east
+    const europeBounds = L.latLngBounds(
+        [34, -25], // southwest: lat, lng
+        [72, 45]   // northeast: lat, lng
+    );
 
+    // Create map centered on Europe
+    const map = L.map("map", {
+        // initial view roughly centered on central Europe
+        center: [54, 10],
+        zoom: 4,
+        // prevent panning outside bounds
+        maxBounds: europeBounds,
+        // optional padding when the map bounces back to bounds
+        maxBoundsViscosity: 0.8
+    });
+
+    // Fit the map to the Europe bounds on load (keeps the chosen zoom if already appropriate)
+    map.fitBounds(europeBounds, { padding: [20, 20] });
+
+    L.tileLayer(
+        "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+        {
+            attribution: "© OpenStreetMap contributors",
+            // you can set min/max zoom if you want to restrict zooming
+            minZoom: 3,
+            maxZoom: 12
+        }
+    ).addTo(map);
+
+    // Optional: only add markers that lie inside the europeBounds
+    metadata
+        .filter(st => {
+            // ensure coordinates are numeric
+            const lat = parseFloat(st.Latitude);
+            const lon = parseFloat(st.Longitude);
+            return europeBounds.contains([lat, lon]);
+        })
+        .forEach(st => {
+
+            const marker = L.circleMarker(
+                [parseFloat(st.Latitude), parseFloat(st.Longitude)],
+                { radius: 6, color: "blue" }
+            ).addTo(map);
+
+            marker.bindPopup(st.station_name);
+
+            marker.on("click", () => {
+                showDroughtSummary(st.station_name);
+                plotSGI(st.station_name);
+            });
+        });
+}
 // --------------------------------------------------
 // CSV parser
 // --------------------------------------------------
