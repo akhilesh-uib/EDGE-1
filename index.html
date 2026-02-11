@@ -77,7 +77,52 @@ Promise.all([
     sgiData = parseCSV(data[2]);
     initMap();
 });
+    
+// --------------------------------------------------
+// Initialize map
+// --------------------------------------------------
+function initMap() {
 
+    // ----------------------------
+    // Set Europe bounds and initial view
+    // ----------------------------
+    const europeBounds = [
+        [34, -10],  // southwest corner
+        [72, 40]    // northeast corner
+    ];
+
+    const map = L.map("map", {
+        maxBounds: europeBounds,      // restrict panning
+        maxBoundsViscosity: 1.0       // stick to bounds
+    }).setView([54, 15], 4);          // center over Europe
+
+    L.tileLayer(
+        "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+        { attribution: "© OpenStreetMap contributors" }
+    ).addTo(map);
+
+    // ----------------------------
+    // Add only stations within Europe
+    // ----------------------------
+    metadata.forEach(st => {
+        const latLng = [st.Latitude, st.Longitude];
+        if (!latLng[0] || !latLng[1]) return;  // skip missing coordinates
+
+        // Check if station is within Europe bounds
+        if (
+            latLng[0] >= europeBounds[0][0] && latLng[0] <= europeBounds[1][0] &&
+            latLng[1] >= europeBounds[0][1] && latLng[1] <= europeBounds[1][1]
+        ) {
+            const marker = L.circleMarker(latLng, { radius: 6, color: "blue" }).addTo(map);
+            marker.bindPopup(st.station_name);
+
+            marker.on("click", () => {
+                showDroughtSummary(st.station_name);
+                plotSGI(st.station_name);
+            });
+        }
+    });
+}
 // --------------------------------------------------
 // CSV parser
 // --------------------------------------------------
