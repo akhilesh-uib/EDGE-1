@@ -121,7 +121,7 @@ function initMap() {
 
             const marker = L.circleMarker(
                 [parseFloat(st.Latitude), parseFloat(st.Longitude)],
-                { radius: 3, color: "blue" }
+                { radius: 2, color: "blue" }
             ).addTo(map);
 
             marker.bindPopup(st.station_name);
