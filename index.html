@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>EDGE-1: The European Dataset for Groundwater Drought Evaluation</title>
+
+<!-- Leaflet -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+h2 {
+    padding: 10px;
+    margin: 0;
+}
+
+.main-container {
+    display: flex;
+    height: 90vh;
+}
+
+#map {
+    flex: 1;
+}
+
+#info {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    border-left: 1px solid #ccc;
+}
+
+#sgi-container {
+    margin-top: 20px;
+}
+
+canvas {
+    width: 100% !important;
+    height: 300px !important;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 6px;
+    text-align: center;
+}
+
+th {
+    background: #f4f4f4;
+}
+</style>
+</head>
+
+<body>
+
+<h2>EDGE-1: The European Dataset for Groundwater Drought Evaluation</h2>
+
+<div class="main-container">
+
+    <div id="map"></div>
+
+    <div id="info">
+        <b>Click a station to see drought summary and SGI time series</b>
+
+        <div id="sgi-container">
+            <canvas id="sgi-chart"></canvas>
+        </div>
+
+        <div id="drought-table"></div>
+    </div>
+
+</div>
+
+<script>
+
+let metadata, droughts, sgiData;
+let sgiChart = null;
+
+// --------------------------------------------------
+// Load data
+// --------------------------------------------------
+Promise.all([
+    fetch("data/metadata.json").then(r => r.json()),
+    fetch("data/drought_summary.json").then(r => r.json()),
+    fetch("data/sgi_timeseries.csv").then(r => r.text())
+]).then(data => {
+    metadata = data[0];
+    droughts = data[1];
+    sgiData = parseCSV(data[2]);
+    initMap();
+});
+
+// --------------------------------------------------
+// CSV parser
+// --------------------------------------------------
+function parseCSV(text) {
+    const lines = text.trim().split("\n");
+    const header = lines.shift().split(",");
+
+    return lines.map(line => {
+        const values = line.split(",");
+        let obj = {};
+        header.forEach((h, i) => obj[h] = values[i]);
+        obj.sgi = parseFloat(obj.sgi);
+        return obj;
+    });
+}
+
+// --------------------------------------------------
+// Map
+// --------------------------------------------------
+function initMap() {
+
+    const map = L.map("map");
+
+    L.tileLayer(
+        "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+        { attribution: "© OpenStreetMap contributors" }
+    ).addTo(map);
+
+    const markerCoords = [];
+
+    metadata.forEach(st => {
+
+        const lat = parseFloat(st.Latitude);
+        const lon = parseFloat(st.Longitude);
+
+        const marker = L.circleMarker(
+            [lat, lon],
+            { radius: 4, color: "blue" }
+        ).addTo(map);
+
+        marker.bindPopup(st.station_name);
+
+        marker.on("click", () => {
+            showDroughtSummary(st.station_name);
+            plotSGI(st.station_name);
+        });
+
+        markerCoords.push([lat, lon]);
+    });
+
+    if (markerCoords.length > 0) {
+        const bounds = L.latLngBounds(markerCoords);
+        map.fitBounds(bounds, { padding: [20, 20] });
+    }
+
+    map.setMinZoom(4);
+    map.setMaxZoom(10);
+}
+
+// --------------------------------------------------
+// Drought table
+// --------------------------------------------------
+function showDroughtSummary(station) {
+
+    const dr = droughts.filter(d => d.Station === station);
+    const container = document.getElementById("drought-table");
+
+    if (dr.length === 0) {
+        container.innerHTML =
+            `<p><b>${station}</b>: No droughts detected.</p>`;
+        return;
+    }
+
+    let html = `<h3>${station} – Drought Events</h3>`;
+    html += `
+        <table>
+            <tr>
+                <th>Start</th>
+                <th>End</th>
+                <th>Duration (months)</th>
+                <th>Magnitude</th>
+                <th>Lowest SGI</th>
+                <th>Date of Lowest SGI</th>
+            </tr>
+    `;
+
+    dr.forEach(d => {
+        html += `
+            <tr>
+                <td>${d.Start}</td>
+                <td>${d.End}</td>
+                <td>${d.Duration_months}</td>
+                <td>${d.Magnitude}</td>
+                <td>${d.Lowest_SGI}</td>
+                <td>${d.Lowest_SGI_date}</td>
+            </tr>
+        `;
+    });
+
+    html += `</table>`;
+    container.innerHTML = html;
+}
+
+// --------------------------------------------------
+// SGI plot
+// --------------------------------------------------
+function plotSGI(station) {
+
+    const data = sgiData
+        .filter(d => d.station_name === station)
+        .sort((a, b) => new Date(a.date) - new Date(b.date));
+
+    if (data.length === 0) {
+        return;
+    }
+
+    const labels = data.map(d => d.date);
+    const values = data.map(d => d.sgi);
+
+    const ctx = document.getElementById("sgi-chart").getContext("2d");
+
+    if (sgiChart) {
+        sgiChart.destroy();
+    }
+
+    sgiChart = new Chart(ctx, {
+        type: "line",
+        data: {
+            labels: labels,
+            datasets: [{
+                label: "Standardized Groundwater Index",
+                data: values,
+                borderColor: "steelblue",
+                borderWidth: 1.5,
+                pointRadius: 0,
+                fill: false
+            }]
+        },
+        options: {
+            responsive: true,
+            interaction: {
+                mode: "index",
+                intersect: false
+            },
+            scales: {
+                x: {
+                    title: { display: true, text: "Date" }
+                },
+                y: {
+                    title: { display: true, text: "SGI" },
+                    suggestedMin: -3,
+                    suggestedMax: 3
+                }
+            }
+        }
+    });
+}
+
+</script>
+</body>
+</html>
