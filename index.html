@@ -151,33 +151,6 @@ function parseCSV(text) {
     });
 }
 
-// --------------------------------------------------
-// Initialize map
-// --------------------------------------------------
-function initMap() {
-
-    const map = L.map("map").setView([56, 14], 5);
-
-    L.tileLayer(
-        "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-        { attribution: "© OpenStreetMap contributors" }
-    ).addTo(map);
-
-    metadata.forEach(st => {
-
-        const marker = L.circleMarker(
-            [st.Latitude, st.Longitude],
-            { radius: 6, color: "blue" }
-        ).addTo(map);
-
-        marker.bindPopup(st.station_name);
-
-        marker.on("click", () => {
-            showDroughtSummary(st.station_name);
-            plotSGI(st.station_name);
-        });
-    });
-}
 
 // --------------------------------------------------
 // Drought table
