@@ -1,5 +1,1590 @@
 [
     {
+        "Longitude": 14.19440179862968,
+        "Latitude": 55.3869304276317,
+        "station_name": "Sandhammaren_1"
+    },
+    {
+        "Longitude": 14.187942758578084,
+        "Latitude": 55.39061660466665,
+        "station_name": "Sandhammaren_2"
+    },
+    {
+        "Longitude": 14.13812388254024,
+        "Latitude": 55.39215267782667,
+        "station_name": "Sandhammaren_7"
+    },
+    {
+        "Longitude": 13.031977030063585,
+        "Latitude": 55.41251265751542,
+        "station_name": "Vellinge_4"
+    },
+    {
+        "Longitude": 14.148299358497573,
+        "Latitude": 55.418197960606186,
+        "station_name": "Sandhammaren_5"
+    },
+    {
+        "Longitude": 14.14185385449646,
+        "Latitude": 55.42848905865379,
+        "station_name": "Sandhammaren_6"
+    },
+    {
+        "Longitude": 13.001081366449531,
+        "Latitude": 55.439170040882274,
+        "station_name": "Vellinge_5"
+    },
+    {
+        "Longitude": 12.998150967004818,
+        "Latitude": 55.51553954794319,
+        "station_name": "Vellinge_6"
+    },
+    {
+        "Longitude": 12.995616202479662,
+        "Latitude": 55.53199252125825,
+        "station_name": "Vellinge_7"
+    },
+    {
+        "Longitude": 13.001152330862167,
+        "Latitude": 55.54568804406285,
+        "station_name": "Vellinge_8"
+    },
+    {
+        "Longitude": 14.106745154745576,
+        "Latitude": 55.96211207586881,
+        "station_name": "Kristianstad_4"
+    },
+    {
+        "Longitude": 14.10809125027832,
+        "Latitude": 55.96278674397901,
+        "station_name": "Kristianstad_3"
+    },
+    {
+        "Longitude": 14.110889622138538,
+        "Latitude": 55.96300464071752,
+        "station_name": "Kristianstad_2"
+    },
+    {
+        "Longitude": 14.118328484500305,
+        "Latitude": 55.96373880993696,
+        "station_name": "Kristianstad_1"
+    },
+    {
+        "Longitude": 14.319459945107957,
+        "Latitude": 55.98487286958219,
+        "station_name": "Kristianstad_5"
+    },
+    {
+        "Longitude": 13.936028661640458,
+        "Latitude": 56.08273088989152,
+        "station_name": "Kristianstad_25"
+    },
+    {
+        "Longitude": 13.936028661640458,
+        "Latitude": 56.08273088989152,
+        "station_name": "Kristianstad_25"
+    },
+    {
+        "Longitude": 15.330292959134562,
+        "Latitude": 56.16782564110921,
+        "station_name": "Ronneby_21"
+    },
+    {
+        "Longitude": 15.332463650574216,
+        "Latitude": 56.16785019109851,
+        "station_name": "Ronneby_22"
+    },
+    {
+        "Longitude": 15.333103657530492,
+        "Latitude": 56.16928719715927,
+        "station_name": "Ronneby_23"
+    },
+    {
+        "Longitude": 15.323603210006109,
+        "Latitude": 56.16942923164339,
+        "station_name": "Ronneby_20"
+    },
+    {
+        "Longitude": 15.341762394667445,
+        "Latitude": 56.17450931234146,
+        "station_name": "Ronneby_26"
+    },
+    {
+        "Longitude": 15.340587885087562,
+        "Latitude": 56.17479916684244,
+        "station_name": "Ronneby_25"
+    },
+    {
+        "Longitude": 15.339550167692456,
+        "Latitude": 56.17484056565291,
+        "station_name": "Ronneby_24"
+    },
+    {
+        "Longitude": 15.35360239881414,
+        "Latitude": 56.31437738211505,
+        "station_name": "Ronneby_101"
+    },
+    {
+        "Longitude": 15.359108341676492,
+        "Latitude": 56.31461571793506,
+        "station_name": "Ronneby_103"
+    },
+    {
+        "Longitude": 15.359003974558846,
+        "Latitude": 56.31462239944013,
+        "station_name": "Ronneby_102"
+    },
+    {
+        "Longitude": 15.36053357238069,
+        "Latitude": 56.31568711926803,
+        "station_name": "Ronneby_104"
+    },
+    {
+        "Longitude": 15.36053357238069,
+        "Latitude": 56.31568711926803,
+        "station_name": "Ronneby_104"
+    },
+    {
+        "Longitude": 16.162574802568212,
+        "Latitude": 56.597342137282425,
+        "station_name": "Kalmar_23"
+    },
+    {
+        "Longitude": 15.543097287710872,
+        "Latitude": 56.60501750021417,
+        "station_name": "Emmaboda_1"
+    },
+    {
+        "Longitude": 15.509546870409624,
+        "Latitude": 56.60612396317882,
+        "station_name": "Emmaboda_5"
+    },
+    {
+        "Longitude": 15.549967950517328,
+        "Latitude": 56.60649990475245,
+        "station_name": "Emmaboda_4"
+    },
+    {
+        "Longitude": 16.086134873359075,
+        "Latitude": 56.60742203629057,
+        "station_name": "Kalmar_24"
+    },
+    {
+        "Longitude": 15.530934877523627,
+        "Latitude": 56.63973422372707,
+        "station_name": "Emmaboda_8"
+    },
+    {
+        "Longitude": 15.530730121244083,
+        "Latitude": 56.64024719406974,
+        "station_name": "Emmaboda_11"
+    },
+    {
+        "Longitude": 15.529297023741846,
+        "Latitude": 56.64037008948725,
+        "station_name": "Emmaboda_10"
+    },
+    {
+        "Longitude": 16.027719386863332,
+        "Latitude": 56.64301212057343,
+        "station_name": "Kalmar_26"
+    },
+    {
+        "Longitude": 14.298498713469897,
+        "Latitude": 56.66015144346432,
+        "station_name": "Liatorp_13"
+    },
+    {
+        "Longitude": 16.015628297381774,
+        "Latitude": 56.66638132871443,
+        "station_name": "Kalmar_25"
+    },
+    {
+        "Longitude": 14.302824196326942,
+        "Latitude": 56.66676468647155,
+        "station_name": "Liatorp_4"
+    },
+    {
+        "Longitude": 14.3046028253251,
+        "Latitude": 56.66726202528008,
+        "station_name": "Liatorp_3"
+    },
+    {
+        "Longitude": 14.30460196260887,
+        "Latitude": 56.6672734304378,
+        "station_name": "Liatorp_2"
+    },
+    {
+        "Longitude": 14.302736079694649,
+        "Latitude": 56.66879732507918,
+        "station_name": "Liatorp_7"
+    },
+    {
+        "Longitude": 14.308338989476304,
+        "Latitude": 56.67006857043096,
+        "station_name": "Liatorp_12"
+    },
+    {
+        "Longitude": 14.304802710088811,
+        "Latitude": 56.6700708928307,
+        "station_name": "Liatorp_9"
+    },
+    {
+        "Longitude": 14.300731270711466,
+        "Latitude": 56.67114444553949,
+        "station_name": "Liatorp_10"
+    },
+    {
+        "Longitude": 12.772440103955256,
+        "Latitude": 57.067489687542206,
+        "station_name": "Varberg_101"
+    },
+    {
+        "Longitude": 12.77778970169008,
+        "Latitude": 57.06988229045484,
+        "station_name": "Varberg_102"
+    },
+    {
+        "Longitude": 12.777476650530154,
+        "Latitude": 57.07115007377213,
+        "station_name": "Varberg_103"
+    },
+    {
+        "Longitude": 12.443750200198442,
+        "Latitude": 57.15116519605103,
+        "station_name": "Varberg_2"
+    },
+    {
+        "Longitude": 12.453285514135777,
+        "Latitude": 57.1773326274698,
+        "station_name": "Varberg_5"
+    },
+    {
+        "Longitude": 18.370241150153326,
+        "Latitude": 57.23521505136669,
+        "station_name": "Hemse_2"
+    },
+    {
+        "Longitude": 16.997758072875683,
+        "Latitude": 57.27710053951743,
+        "station_name": "Böda_3"
+    },
+    {
+        "Longitude": 16.999783976866176,
+        "Latitude": 57.27897321814972,
+        "station_name": "Böda_13"
+    },
+    {
+        "Longitude": 16.99925404183694,
+        "Latitude": 57.2789906339243,
+        "station_name": "Böda_12"
+    },
+    {
+        "Longitude": 17.00255327504711,
+        "Latitude": 57.279824158880864,
+        "station_name": "Böda_9"
+    },
+    {
+        "Longitude": 15.642867577997215,
+        "Latitude": 57.28224354545551,
+        "station_name": "Vimmerby_55"
+    },
+    {
+        "Longitude": 16.99136185520946,
+        "Latitude": 57.28612879587413,
+        "station_name": "Böda_7"
+    },
+    {
+        "Longitude": 15.641545736265222,
+        "Latitude": 57.28767082668735,
+        "station_name": "Vimmerby_54"
+    },
+    {
+        "Longitude": 15.639774509524145,
+        "Latitude": 57.289368981225095,
+        "station_name": "Vimmerby_53"
+    },
+    {
+        "Longitude": 15.639380333325338,
+        "Latitude": 57.29099669419184,
+        "station_name": "Vimmerby_52"
+    },
+    {
+        "Longitude": 15.639706456781136,
+        "Latitude": 57.29162386678883,
+        "station_name": "Vimmerby_51"
+    },
+    {
+        "Longitude": 13.624294155460971,
+        "Latitude": 57.397368730293245,
+        "station_name": "Nissafors_3"
+    },
+    {
+        "Longitude": 13.618349582720272,
+        "Latitude": 57.39919003554117,
+        "station_name": "Nissafors_2"
+    },
+    {
+        "Longitude": 13.646207983366992,
+        "Latitude": 57.411771170873656,
+        "station_name": "Nissafors_13"
+    },
+    {
+        "Longitude": 13.646236975347684,
+        "Latitude": 57.4120547462482,
+        "station_name": "Nissafors_14"
+    },
+    {
+        "Longitude": 18.36770525848202,
+        "Latitude": 57.49354140548274,
+        "station_name": "Isums_1"
+    },
+    {
+        "Longitude": 15.833019820570398,
+        "Latitude": 57.51152660928583,
+        "station_name": "Vimmerby_15"
+    },
+    {
+        "Longitude": 15.829170136199089,
+        "Latitude": 57.51189314008369,
+        "station_name": "Vimmerby_18"
+    },
+    {
+        "Longitude": 15.830303941456114,
+        "Latitude": 57.512131824352274,
+        "station_name": "Vimmerby_14"
+    },
+    {
+        "Longitude": 15.828161749210269,
+        "Latitude": 57.51256271732531,
+        "station_name": "Vimmerby_13"
+    },
+    {
+        "Longitude": 15.824636859493536,
+        "Latitude": 57.513474410256094,
+        "station_name": "Vimmerby_12"
+    },
+    {
+        "Longitude": 15.821066749341911,
+        "Latitude": 57.5145061331685,
+        "station_name": "Vimmerby_11"
+    },
+    {
+        "Longitude": 12.028100346873034,
+        "Latitude": 57.53288712321845,
+        "station_name": "Kungsbacka_9"
+    },
+    {
+        "Longitude": 12.043328032203162,
+        "Latitude": 57.547370961879366,
+        "station_name": "Kungsbacka_5"
+    },
+    {
+        "Longitude": 11.99673797351179,
+        "Latitude": 57.55132452946479,
+        "station_name": "Kungsbacka_13"
+    },
+    {
+        "Longitude": 12.020793673583688,
+        "Latitude": 57.553779798127856,
+        "station_name": "Kungsbacka_14"
+    },
+    {
+        "Longitude": 12.020220158318846,
+        "Latitude": 57.56177146146484,
+        "station_name": "Kungsbacka_2"
+    },
+    {
+        "Longitude": 18.61078051812328,
+        "Latitude": 57.664836180602585,
+        "station_name": "Slite_14"
+    },
+    {
+        "Longitude": 18.673785655036376,
+        "Latitude": 57.67537272743797,
+        "station_name": "Slite_9"
+    },
+    {
+        "Longitude": 13.763623963139482,
+        "Latitude": 57.68119021827718,
+        "station_name": "Komosse_1"
+    },
+    {
+        "Longitude": 15.601695693080218,
+        "Latitude": 57.76055624136762,
+        "station_name": "Vimmerby_106"
+    },
+    {
+        "Longitude": 15.600925057929103,
+        "Latitude": 57.76065322708066,
+        "station_name": "Vimmerby_105"
+    },
+    {
+        "Longitude": 15.599778014769178,
+        "Latitude": 57.7611492907482,
+        "station_name": "Vimmerby_104"
+    },
+    {
+        "Longitude": 15.601046544657404,
+        "Latitude": 57.76206911837146,
+        "station_name": "Vimmerby_103"
+    },
+    {
+        "Longitude": 15.60022005280713,
+        "Latitude": 57.76217480821298,
+        "station_name": "Vimmerby_102"
+    },
+    {
+        "Longitude": 15.599259561659816,
+        "Latitude": 57.76219668982759,
+        "station_name": "Vimmerby_101"
+    },
+    {
+        "Longitude": 12.436184864545172,
+        "Latitude": 57.76399874890168,
+        "station_name": "Lerum_3"
+    },
+    {
+        "Longitude": 12.450660511732911,
+        "Latitude": 57.768368337214575,
+        "station_name": "Lerum_14"
+    },
+    {
+        "Longitude": 12.442508581205113,
+        "Latitude": 57.77529487349284,
+        "station_name": "Lerum_10"
+    },
+    {
+        "Longitude": 12.40157678826551,
+        "Latitude": 57.775898935678,
+        "station_name": "Lerum_1"
+    },
+    {
+        "Longitude": 12.425757453555802,
+        "Latitude": 57.776835347767104,
+        "station_name": "Lerum_5"
+    },
+    {
+        "Longitude": 12.438509719298391,
+        "Latitude": 57.78173090641319,
+        "station_name": "Lerum_9"
+    },
+    {
+        "Longitude": 12.43548598520465,
+        "Latitude": 57.78731067530641,
+        "station_name": "Lerum_8"
+    },
+    {
+        "Longitude": 12.428299797021186,
+        "Latitude": 57.78777187127603,
+        "station_name": "Lerum_6"
+    },
+    {
+        "Longitude": 15.73656490905832,
+        "Latitude": 57.79723531378529,
+        "station_name": "Vimmerby_41"
+    },
+    {
+        "Longitude": 15.739589774626698,
+        "Latitude": 57.798197896490585,
+        "station_name": "Vimmerby_42"
+    },
+    {
+        "Longitude": 11.835445217205317,
+        "Latitude": 57.81824702149989,
+        "station_name": "Kungälv_3"
+    },
+    {
+        "Longitude": 11.828437811276814,
+        "Latitude": 57.81828217504534,
+        "station_name": "Kungälv_10"
+    },
+    {
+        "Longitude": 11.852497950042194,
+        "Latitude": 57.81910051002056,
+        "station_name": "Kungälv_1"
+    },
+    {
+        "Longitude": 11.811463928053046,
+        "Latitude": 57.82008904259892,
+        "station_name": "Kungälv_7"
+    },
+    {
+        "Longitude": 11.819055447888532,
+        "Latitude": 57.82521088516874,
+        "station_name": "Kungälv_6"
+    },
+    {
+        "Longitude": 11.833748847656484,
+        "Latitude": 57.8274887936021,
+        "station_name": "Kungälv_5"
+    },
+    {
+        "Longitude": 11.779033596387665,
+        "Latitude": 57.836896299536285,
+        "station_name": "Kungälv_11"
+    },
+    {
+        "Longitude": 15.510986048988272,
+        "Latitude": 57.96753246359754,
+        "station_name": "Kinda_8"
+    },
+    {
+        "Longitude": 15.509180758513178,
+        "Latitude": 57.97880541932758,
+        "station_name": "Kinda_6"
+    },
+    {
+        "Longitude": 15.592787652264168,
+        "Latitude": 57.98239620197993,
+        "station_name": "Kinda_1"
+    },
+    {
+        "Longitude": 15.529473712019294,
+        "Latitude": 57.98359436324557,
+        "station_name": "Kinda_4"
+    },
+    {
+        "Longitude": 15.561826052371906,
+        "Latitude": 57.98483437479651,
+        "station_name": "Kinda_3"
+    },
+    {
+        "Longitude": 15.515856498397415,
+        "Latitude": 57.98972867689727,
+        "station_name": "Kinda_5"
+    },
+    {
+        "Longitude": 13.12444385947527,
+        "Latitude": 58.03583443963785,
+        "station_name": "Herrljunga_9"
+    },
+    {
+        "Longitude": 13.115877875394675,
+        "Latitude": 58.03812421556804,
+        "station_name": "Herrljunga_8"
+    },
+    {
+        "Longitude": 11.50249219491912,
+        "Latitude": 58.3821113664474,
+        "station_name": "Lysekil_2"
+    },
+    {
+        "Longitude": 11.518308851439876,
+        "Latitude": 58.383442639193,
+        "station_name": "Lysekil_3"
+    },
+    {
+        "Longitude": 11.501683647095737,
+        "Latitude": 58.39248016492109,
+        "station_name": "Lysekil_4"
+    },
+    {
+        "Longitude": 15.136556656411544,
+        "Latitude": 58.4110302975596,
+        "station_name": "Motala_10"
+    },
+    {
+        "Longitude": 15.136451047125254,
+        "Latitude": 58.41124821102284,
+        "station_name": "Motala_11"
+    },
+    {
+        "Longitude": 15.136453865293298,
+        "Latitude": 58.41126886543531,
+        "station_name": "Motala_12"
+    },
+    {
+        "Longitude": 15.136489148518123,
+        "Latitude": 58.41149722699564,
+        "station_name": "Motala_13"
+    },
+    {
+        "Longitude": 15.136132647738595,
+        "Latitude": 58.41322717016549,
+        "station_name": "Motala_14"
+    },
+    {
+        "Longitude": 15.136114522375818,
+        "Latitude": 58.41323159034065,
+        "station_name": "Motala_15"
+    },
+    {
+        "Longitude": 15.842034331590522,
+        "Latitude": 58.413902477196864,
+        "station_name": "Linköping_5"
+    },
+    {
+        "Longitude": 14.945778889279769,
+        "Latitude": 58.42270973019923,
+        "station_name": "Motala_70"
+    },
+    {
+        "Longitude": 14.924932140164772,
+        "Latitude": 58.43051020900286,
+        "station_name": "Motala_71"
+    },
+    {
+        "Longitude": 15.112209871947336,
+        "Latitude": 58.432672401525856,
+        "station_name": "Motala_34"
+    },
+    {
+        "Longitude": 15.124065563502697,
+        "Latitude": 58.44117561896829,
+        "station_name": "Motala_31"
+    },
+    {
+        "Longitude": 15.123179789647832,
+        "Latitude": 58.444157322114506,
+        "station_name": "Motala_32"
+    },
+    {
+        "Longitude": 15.819012658968433,
+        "Latitude": 58.45478346706917,
+        "station_name": "Linköping_2"
+    },
+    {
+        "Longitude": 15.812204476299987,
+        "Latitude": 58.45701140767827,
+        "station_name": "Linköping_1"
+    },
+    {
+        "Longitude": 15.180796776199932,
+        "Latitude": 58.48271273193768,
+        "station_name": "Motala_40"
+    },
+    {
+        "Longitude": 15.180761472018288,
+        "Latitude": 58.48271727236566,
+        "station_name": "Motala_41"
+    },
+    {
+        "Longitude": 15.180738952909222,
+        "Latitude": 58.48307422458119,
+        "station_name": "Motala_43"
+    },
+    {
+        "Longitude": 15.180583844903907,
+        "Latitude": 58.48315949670848,
+        "station_name": "Motala_42"
+    },
+    {
+        "Longitude": 15.181000353809154,
+        "Latitude": 58.48391640043442,
+        "station_name": "Motala_44"
+    },
+    {
+        "Longitude": 15.181966513552258,
+        "Latitude": 58.48967605458168,
+        "station_name": "Motala_45"
+    },
+    {
+        "Longitude": 15.191014437366285,
+        "Latitude": 58.49616542692046,
+        "station_name": "Motala_46"
+    },
+    {
+        "Longitude": 16.430678503171393,
+        "Latitude": 58.51320821832119,
+        "station_name": "Vikbolandet_6"
+    },
+    {
+        "Longitude": 16.40460774915119,
+        "Latitude": 58.53490410855432,
+        "station_name": "Vikbolandet_2"
+    },
+    {
+        "Longitude": 16.403227655831067,
+        "Latitude": 58.54389946650129,
+        "station_name": "Vikbolandet_1"
+    },
+    {
+        "Longitude": 16.66888731779895,
+        "Latitude": 58.64336268178256,
+        "station_name": "Kolmården_3"
+    },
+    {
+        "Longitude": 16.662147461250537,
+        "Latitude": 58.652819597586266,
+        "station_name": "Kolmården_1"
+    },
+    {
+        "Longitude": 16.65404919868829,
+        "Latitude": 58.65457938733583,
+        "station_name": "Kolmården_5"
+    },
+    {
+        "Longitude": 16.665220196762423,
+        "Latitude": 58.65567963397554,
+        "station_name": "Kolmården_4"
+    },
+    {
+        "Longitude": 14.322867693377004,
+        "Latitude": 58.72037571184122,
+        "station_name": "Tiveden_28"
+    },
+    {
+        "Longitude": 14.34598151666924,
+        "Latitude": 58.755985243145226,
+        "station_name": "Tiveden_23"
+    },
+    {
+        "Longitude": 14.30335547083253,
+        "Latitude": 58.774290408187134,
+        "station_name": "Tiveden_13"
+    },
+    {
+        "Longitude": 14.302742703618913,
+        "Latitude": 58.77444902999332,
+        "station_name": "Tiveden_26"
+    },
+    {
+        "Longitude": 14.338355553930777,
+        "Latitude": 58.78073458385451,
+        "station_name": "Tiveden_74"
+    },
+    {
+        "Longitude": 14.354140402557787,
+        "Latitude": 58.78389512204235,
+        "station_name": "Tiveden_94"
+    },
+    {
+        "Longitude": 14.317746475176367,
+        "Latitude": 58.78560285951977,
+        "station_name": "Tiveden_29"
+    },
+    {
+        "Longitude": 14.352806580305012,
+        "Latitude": 58.78585532399984,
+        "station_name": "Tiveden_93"
+    },
+    {
+        "Longitude": 14.355031944084825,
+        "Latitude": 58.78618979004232,
+        "station_name": "Tiveden_96"
+    },
+    {
+        "Longitude": 14.298211770827828,
+        "Latitude": 58.79524274861736,
+        "station_name": "Tiveden_90"
+    },
+    {
+        "Longitude": 12.135299564890198,
+        "Latitude": 58.8091103470544,
+        "station_name": "Ödskölt_7"
+    },
+    {
+        "Longitude": 12.145585753442454,
+        "Latitude": 58.81166380294047,
+        "station_name": "Ödskölt_5"
+    },
+    {
+        "Longitude": 12.139424102320618,
+        "Latitude": 58.82525923023066,
+        "station_name": "Ödskölt_9"
+    },
+    {
+        "Longitude": 12.15540028709932,
+        "Latitude": 58.83846595895851,
+        "station_name": "Ödskölt_10"
+    },
+    {
+        "Longitude": 11.746777371676696,
+        "Latitude": 58.987641945958735,
+        "station_name": "Ödskölt_101"
+    },
+    {
+        "Longitude": 11.744120877420198,
+        "Latitude": 58.98885134401862,
+        "station_name": "Ödskölt_104"
+    },
+    {
+        "Longitude": 11.748491939173102,
+        "Latitude": 58.98940164990755,
+        "station_name": "Ödskölt_103"
+    },
+    {
+        "Longitude": 11.747620441733654,
+        "Latitude": 58.98996393074387,
+        "station_name": "Ödskölt_102"
+    },
+    {
+        "Longitude": 15.049816314045014,
+        "Latitude": 59.01544845406854,
+        "station_name": "Hallsberg_8"
+    },
+    {
+        "Longitude": 15.031827106644322,
+        "Latitude": 59.02434152055164,
+        "station_name": "Hallsberg_7"
+    },
+    {
+        "Longitude": 15.008875315787478,
+        "Latitude": 59.03160711236335,
+        "station_name": "Hallsberg_9"
+    },
+    {
+        "Longitude": 15.044510689541807,
+        "Latitude": 59.0491022269589,
+        "station_name": "Hallsberg_1"
+    },
+    {
+        "Longitude": 15.042517480048057,
+        "Latitude": 59.051481491353215,
+        "station_name": "Hallsberg_2"
+    },
+    {
+        "Longitude": 18.09507275012621,
+        "Latitude": 59.0848366792394,
+        "station_name": "Haninge_3"
+    },
+    {
+        "Longitude": 18.09829072835341,
+        "Latitude": 59.08824414184823,
+        "station_name": "Haninge_4"
+    },
+    {
+        "Longitude": 12.119592731401292,
+        "Latitude": 59.17244601930325,
+        "station_name": "Lefsebäcken_1"
+    },
+    {
+        "Longitude": 12.117478966619815,
+        "Latitude": 59.17721964152959,
+        "station_name": "Lefsebäcken_2"
+    },
+    {
+        "Longitude": 12.122977810204237,
+        "Latitude": 59.17819243372734,
+        "station_name": "Lefsebäcken_3"
+    },
+    {
+        "Longitude": 12.132653871057943,
+        "Latitude": 59.183586964181806,
+        "station_name": "Lefsebäcken_4"
+    },
+    {
+        "Longitude": 17.684560184571644,
+        "Latitude": 59.231879331296845,
+        "station_name": "Södertälje_13"
+    },
+    {
+        "Longitude": 17.7012791814083,
+        "Latitude": 59.25164847934545,
+        "station_name": "Södertälje_19"
+    },
+    {
+        "Longitude": 17.608317158433117,
+        "Latitude": 59.2574878373592,
+        "station_name": "Södertälje_1"
+    },
+    {
+        "Longitude": 17.605983038366,
+        "Latitude": 59.27870969342598,
+        "station_name": "Södertälje_20"
+    },
+    {
+        "Longitude": 16.690067630891466,
+        "Latitude": 59.34876235251744,
+        "station_name": "Eskilstuna_4"
+    },
+    {
+        "Longitude": 16.696405913351256,
+        "Latitude": 59.36403779382694,
+        "station_name": "Eskilstuna_5"
+    },
+    {
+        "Longitude": 18.23670080159305,
+        "Latitude": 59.38926171353297,
+        "station_name": "Vaxholm_3"
+    },
+    {
+        "Longitude": 18.272301379147464,
+        "Latitude": 59.3930461394121,
+        "station_name": "Vaxholm_1"
+    },
+    {
+        "Longitude": 18.196606526480043,
+        "Latitude": 59.3965723598928,
+        "station_name": "Vaxholm_5"
+    },
+    {
+        "Longitude": 18.18723079669612,
+        "Latitude": 59.397888190567095,
+        "station_name": "Vaxholm_6"
+    },
+    {
+        "Longitude": 18.16912938392242,
+        "Latitude": 59.40190985596052,
+        "station_name": "Vaxholm_7"
+    },
+    {
+        "Longitude": 18.221194161536395,
+        "Latitude": 59.40454655609855,
+        "station_name": "Vaxholm_13"
+    },
+    {
+        "Longitude": 18.24727731884826,
+        "Latitude": 59.40540860600854,
+        "station_name": "Vaxholm_17"
+    },
+    {
+        "Longitude": 18.1804678326286,
+        "Latitude": 59.4067490853076,
+        "station_name": "Vaxholm_8"
+    },
+    {
+        "Longitude": 18.201144324291512,
+        "Latitude": 59.40743307904972,
+        "station_name": "Vaxholm_12"
+    },
+    {
+        "Longitude": 18.227170345868863,
+        "Latitude": 59.41002553775814,
+        "station_name": "Vaxholm_14"
+    },
+    {
+        "Longitude": 18.194123107160262,
+        "Latitude": 59.41286187751477,
+        "station_name": "Vaxholm_11"
+    },
+    {
+        "Longitude": 18.17278927333231,
+        "Latitude": 59.4135772049934,
+        "station_name": "Vaxholm_9"
+    },
+    {
+        "Longitude": 18.17078434662732,
+        "Latitude": 59.419658193390575,
+        "station_name": "Vaxholm_22"
+    },
+    {
+        "Longitude": 18.177947953213728,
+        "Latitude": 59.42086621897241,
+        "station_name": "Vaxholm_24"
+    },
+    {
+        "Longitude": 18.20982459609593,
+        "Latitude": 59.42225324416997,
+        "station_name": "Vaxholm_16"
+    },
+    {
+        "Longitude": 13.888133578788644,
+        "Latitude": 59.60457348274212,
+        "station_name": "Brattforsheden_5"
+    },
+    {
+        "Longitude": 13.885205720491092,
+        "Latitude": 59.604701278617554,
+        "station_name": "Brattforsheden_17"
+    },
+    {
+        "Longitude": 13.881891401719582,
+        "Latitude": 59.60549539860676,
+        "station_name": "Brattforsheden_18"
+    },
+    {
+        "Longitude": 13.884873056066118,
+        "Latitude": 59.60565039547324,
+        "station_name": "Brattforsheden_3"
+    },
+    {
+        "Longitude": 13.880191741952297,
+        "Latitude": 59.60628402434841,
+        "station_name": "Brattforsheden_14"
+    },
+    {
+        "Longitude": 13.878014664289388,
+        "Latitude": 59.60939964678387,
+        "station_name": "Brattforsheden_11"
+    },
+    {
+        "Longitude": 13.878558701770087,
+        "Latitude": 59.61387279812577,
+        "station_name": "Brattforsheden_13"
+    },
+    {
+        "Longitude": 15.431308732619373,
+        "Latitude": 59.62205033165114,
+        "station_name": "Grimsö_2"
+    },
+    {
+        "Longitude": 15.431308444892156,
+        "Latitude": 59.6220693699989,
+        "station_name": "Grimsö_3"
+    },
+    {
+        "Longitude": 15.431988191190078,
+        "Latitude": 59.62229818494667,
+        "station_name": "Grimsö_5"
+    },
+    {
+        "Longitude": 15.431911665177656,
+        "Latitude": 59.62237144371832,
+        "station_name": "Grimsö_4"
+    },
+    {
+        "Longitude": 15.433799645001733,
+        "Latitude": 59.62260991271741,
+        "station_name": "Grimsö_7"
+    },
+    {
+        "Longitude": 15.43283773107822,
+        "Latitude": 59.622675412562266,
+        "station_name": "Grimsö_6"
+    },
+    {
+        "Longitude": 17.64713759679507,
+        "Latitude": 59.65180213366639,
+        "station_name": "Sigtuna_2"
+    },
+    {
+        "Longitude": 17.091346762322512,
+        "Latitude": 59.74208181976369,
+        "station_name": "Enköping_122"
+    },
+    {
+        "Longitude": 16.502933752899708,
+        "Latitude": 59.837631019622215,
+        "station_name": "Sala_1"
+    },
+    {
+        "Longitude": 16.4814396907387,
+        "Latitude": 59.85018712029527,
+        "station_name": "Sala_2"
+    },
+    {
+        "Longitude": 16.87951052456796,
+        "Latitude": 60.07571217246696,
+        "station_name": "Tärnsjö_21"
+    },
+    {
+        "Longitude": 16.87951005564225,
+        "Latitude": 60.07571972366257,
+        "station_name": "Tärnsjö_20"
+    },
+    {
+        "Longitude": 16.876793731643918,
+        "Latitude": 60.10529074590195,
+        "station_name": "Tärnsjö_3"
+    },
+    {
+        "Longitude": 16.888832777513745,
+        "Latitude": 60.1112541359627,
+        "station_name": "Tärnsjö_24"
+    },
+    {
+        "Longitude": 16.87320529642602,
+        "Latitude": 60.12563326912332,
+        "station_name": "Tärnsjö_4"
+    },
+    {
+        "Longitude": 16.915730513395204,
+        "Latitude": 60.12816586428293,
+        "station_name": "Tärnsjö_23"
+    },
+    {
+        "Longitude": 16.8862801199878,
+        "Latitude": 60.1326589877393,
+        "station_name": "Tärnsjö_29"
+    },
+    {
+        "Longitude": 16.890891043721727,
+        "Latitude": 60.13560041952939,
+        "station_name": "Tärnsjö_2"
+    },
+    {
+        "Longitude": 16.918524126292837,
+        "Latitude": 60.13732258731992,
+        "station_name": "Tärnsjö_27"
+    },
+    {
+        "Longitude": 16.501032552339083,
+        "Latitude": 60.81791532521955,
+        "station_name": "Ockelbo_2"
+    },
+    {
+        "Longitude": 16.50610517858281,
+        "Latitude": 60.821039459561625,
+        "station_name": "Ockelbo_1"
+    },
+    {
+        "Longitude": 14.331754281369031,
+        "Latitude": 60.87545282875559,
+        "station_name": "Mora_6"
+    },
+    {
+        "Longitude": 14.362600807453166,
+        "Latitude": 60.879017695460085,
+        "station_name": "Mora_12"
+    },
+    {
+        "Longitude": 14.361540986111056,
+        "Latitude": 60.879098234390455,
+        "station_name": "Mora_11"
+    },
+    {
+        "Longitude": 14.362391177571364,
+        "Latitude": 60.88022815244577,
+        "station_name": "Mora_13"
+    },
+    {
+        "Longitude": 14.38345702133398,
+        "Latitude": 60.8805956787342,
+        "station_name": "Mora_8"
+    },
+    {
+        "Longitude": 16.65891305618678,
+        "Latitude": 61.36543266712541,
+        "station_name": "Bollnäs_1"
+    },
+    {
+        "Longitude": 14.170896546722064,
+        "Latitude": 61.92002634383467,
+        "station_name": "Sveg_2"
+    },
+    {
+        "Longitude": 14.178860791727992,
+        "Latitude": 61.929194877971504,
+        "station_name": "Sveg_3"
+    },
+    {
+        "Longitude": 14.2070674730054,
+        "Latitude": 61.93747543905898,
+        "station_name": "Sveg_4"
+    },
+    {
+        "Longitude": 14.256167641179294,
+        "Latitude": 61.99728138541529,
+        "station_name": "Sveg_5"
+    },
+    {
+        "Longitude": 14.3441445508564,
+        "Latitude": 62.01466156429552,
+        "station_name": "Sveg_7"
+    },
+    {
+        "Longitude": 16.21202387200163,
+        "Latitude": 62.697203521287456,
+        "station_name": "Torpshammar_14"
+    },
+    {
+        "Longitude": 16.251496717981848,
+        "Latitude": 62.71243992331485,
+        "station_name": "Torpshammar_24"
+    },
+    {
+        "Longitude": 16.24430769643983,
+        "Latitude": 62.71292869489646,
+        "station_name": "Torpshammar_6"
+    },
+    {
+        "Longitude": 16.24732156896387,
+        "Latitude": 62.713029065510746,
+        "station_name": "Torpshammar_7"
+    },
+    {
+        "Longitude": 16.24022000992712,
+        "Latitude": 62.71494246618735,
+        "station_name": "Torpshammar_28"
+    },
+    {
+        "Longitude": 16.215500590836246,
+        "Latitude": 62.7178907232242,
+        "station_name": "Torpshammar_9"
+    },
+    {
+        "Longitude": 16.21393098270284,
+        "Latitude": 62.7181145379128,
+        "station_name": "Torpshammar_29"
+    },
+    {
+        "Longitude": 16.250924688921472,
+        "Latitude": 62.73709472238575,
+        "station_name": "Torpshammar_2"
+    },
+    {
+        "Longitude": 17.015461296433283,
+        "Latitude": 63.06190038043884,
+        "station_name": "Sollefteå_3"
+    },
+    {
+        "Longitude": 17.0157497710575,
+        "Latitude": 63.06216526977622,
+        "station_name": "Sollefteå_2"
+    },
+    {
+        "Longitude": 17.01528192371184,
+        "Latitude": 63.062357423848965,
+        "station_name": "Sollefteå_1"
+    },
+    {
+        "Longitude": 12.11480247503788,
+        "Latitude": 63.30026854256132,
+        "station_name": "Visjövallen_7"
+    },
+    {
+        "Longitude": 12.118921816304685,
+        "Latitude": 63.300669434263845,
+        "station_name": "Visjövallen_8"
+    },
+    {
+        "Longitude": 14.189537930213536,
+        "Latitude": 63.31238150331248,
+        "station_name": "Ytterån_6"
+    },
+    {
+        "Longitude": 14.184937599676791,
+        "Latitude": 63.31592705038588,
+        "station_name": "Ytterån_1"
+    },
+    {
+        "Longitude": 14.127269934858427,
+        "Latitude": 63.31657063775201,
+        "station_name": "Ytterån_10"
+    },
+    {
+        "Longitude": 14.154623311051449,
+        "Latitude": 63.31690308912764,
+        "station_name": "Ytterån_9"
+    },
+    {
+        "Longitude": 14.186681669048305,
+        "Latitude": 63.318544996729706,
+        "station_name": "Ytterån_3"
+    },
+    {
+        "Longitude": 13.024086254304391,
+        "Latitude": 63.73745053423048,
+        "station_name": "Kallsjön_2"
+    },
+    {
+        "Longitude": 13.099571784562754,
+        "Latitude": 63.77811315891455,
+        "station_name": "Kallsjön_1"
+    },
+    {
+        "Longitude": 17.331790717244044,
+        "Latitude": 63.9145417455162,
+        "station_name": "Åsele_16"
+    },
+    {
+        "Longitude": 17.194144589108788,
+        "Latitude": 64.00453754620901,
+        "station_name": "Åsele_22"
+    },
+    {
+        "Longitude": 17.229601110009334,
+        "Latitude": 64.00708475945478,
+        "station_name": "Åsele_20"
+    },
+    {
+        "Longitude": 20.49273684864649,
+        "Latitude": 64.01055683496467,
+        "station_name": "Umeå_4"
+    },
+    {
+        "Longitude": 20.49539705676004,
+        "Latitude": 64.01091777601555,
+        "station_name": "Umeå_5"
+    },
+    {
+        "Longitude": 17.258260138438096,
+        "Latitude": 64.0131202867331,
+        "station_name": "Åsele_23"
+    },
+    {
+        "Longitude": 19.57322496607351,
+        "Latitude": 64.18608708539585,
+        "station_name": "Umeå_201"
+    },
+    {
+        "Longitude": 19.57384112816555,
+        "Latitude": 64.18657126910125,
+        "station_name": "Umeå_202"
+    },
+    {
+        "Longitude": 19.77376113924072,
+        "Latitude": 64.25129170593524,
+        "station_name": "Umeå_105"
+    },
+    {
+        "Longitude": 19.77970540327604,
+        "Latitude": 64.25505411110093,
+        "station_name": "Umeå_103"
+    },
+    {
+        "Longitude": 19.77970540327604,
+        "Latitude": 64.25505411110093,
+        "station_name": "Umeå_103"
+    },
+    {
+        "Longitude": 19.779161086119228,
+        "Latitude": 64.25513489233248,
+        "station_name": "Umeå_104"
+    },
+    {
+        "Longitude": 19.780310546803,
+        "Latitude": 64.25520515885297,
+        "station_name": "Umeå_101"
+    },
+    {
+        "Longitude": 16.058109096851044,
+        "Latitude": 64.40317103355217,
+        "station_name": "Ormsjön_23"
+    },
+    {
+        "Longitude": 15.851851274575498,
+        "Latitude": 64.56638981087289,
+        "station_name": "Ormsjön_11"
+    },
+    {
+        "Longitude": 16.002008613285494,
+        "Latitude": 64.80023668296833,
+        "station_name": "Malgomaj_41"
+    },
+    {
+        "Longitude": 15.903612541497353,
+        "Latitude": 64.8539552261153,
+        "station_name": "Malgomaj_44"
+    },
+    {
+        "Longitude": 20.99294307473109,
+        "Latitude": 64.90024018965444,
+        "station_name": "Skellefteå_6"
+    },
+    {
+        "Longitude": 20.98894789411172,
+        "Latitude": 64.90046780673667,
+        "station_name": "Skellefteå_4"
+    },
+    {
+        "Longitude": 15.870118582825404,
+        "Latitude": 64.91226092004877,
+        "station_name": "Malgomaj_45"
+    },
+    {
+        "Longitude": 14.209626517973698,
+        "Latitude": 64.9146820719934,
+        "station_name": "Ströms_Vattudal_22"
+    },
+    {
+        "Longitude": 20.957797737989043,
+        "Latitude": 64.9150756682853,
+        "station_name": "Skellefteå_12"
+    },
+    {
+        "Longitude": 17.112964155303533,
+        "Latitude": 64.9828440034976,
+        "station_name": "Stensele_1"
+    },
+    {
+        "Longitude": 17.080048075296467,
+        "Latitude": 64.99432600163962,
+        "station_name": "Stensele_4"
+    },
+    {
+        "Longitude": 17.07190370094305,
+        "Latitude": 64.99613275259406,
+        "station_name": "Stensele_5"
+    },
+    {
+        "Longitude": 17.07196593724942,
+        "Latitude": 65.00528592111279,
+        "station_name": "Stensele_6"
+    },
+    {
+        "Longitude": 17.058799578084756,
+        "Latitude": 65.0295669187371,
+        "station_name": "Stensele_9"
+    },
+    {
+        "Longitude": 22.092809381538903,
+        "Latitude": 65.56230942536625,
+        "station_name": "Luleå_2"
+    },
+    {
+        "Longitude": 15.03849851008131,
+        "Latitude": 65.96075290427186,
+        "station_name": "Tärnaby_3"
+    },
+    {
+        "Longitude": 15.061250745475904,
+        "Latitude": 65.97207671295705,
+        "station_name": "Tärnaby_4"
+    },
+    {
+        "Longitude": 18.104472791552244,
+        "Latitude": 65.98448550678138,
+        "station_name": "Arjeplog_8"
+    },
+    {
+        "Longitude": 18.115491930016766,
+        "Latitude": 65.99639416919696,
+        "station_name": "Arjeplog_5"
+    },
+    {
+        "Longitude": 18.1389624175011,
+        "Latitude": 65.99664570974419,
+        "station_name": "Arjeplog_10"
+    },
+    {
+        "Longitude": 18.12516849825547,
+        "Latitude": 65.99922319610704,
+        "station_name": "Arjeplog_3"
+    },
+    {
+        "Longitude": 18.12638723929578,
+        "Latitude": 66.00024206768012,
+        "station_name": "Arjeplog_2"
+    },
+    {
+        "Longitude": 18.12780210057049,
+        "Latitude": 66.00226968207564,
+        "station_name": "Arjeplog_1"
+    },
+    {
+        "Longitude": 21.865734006209884,
+        "Latitude": 66.27738969285681,
+        "station_name": "Pålkem_50"
+    },
+    {
+        "Longitude": 21.87986589764458,
+        "Latitude": 66.32309578388693,
+        "station_name": "Pålkem_49"
+    },
+    {
+        "Longitude": 21.852529260544355,
+        "Latitude": 66.3568764517269,
+        "station_name": "Pålkem_48"
+    },
+    {
+        "Longitude": 21.575501138572605,
+        "Latitude": 66.38766124499665,
+        "station_name": "Pålkem_32"
+    },
+    {
+        "Longitude": 21.57785178416958,
+        "Latitude": 66.38819725981128,
+        "station_name": "Pålkem_2"
+    },
+    {
+        "Longitude": 21.576994699197847,
+        "Latitude": 66.38880066627577,
+        "station_name": "Pålkem_1"
+    },
+    {
+        "Longitude": 21.773636825615974,
+        "Latitude": 66.40530466340542,
+        "station_name": "Pålkem_18"
+    },
+    {
+        "Longitude": 21.699266437844567,
+        "Latitude": 66.41569799617186,
+        "station_name": "Pålkem_14"
+    },
+    {
+        "Longitude": 21.745133834032604,
+        "Latitude": 66.41745403877408,
+        "station_name": "Pålkem_34"
+    },
+    {
+        "Longitude": 21.59730775001915,
+        "Latitude": 66.48530764405955,
+        "station_name": "Pålkem_12"
+    },
+    {
+        "Longitude": 21.55578028048128,
+        "Latitude": 66.49829115920298,
+        "station_name": "Pålkem_46"
+    },
+    {
+        "Longitude": 21.51824357435892,
+        "Latitude": 66.51809533915407,
+        "station_name": "Pålkem_10"
+    },
+    {
+        "Longitude": 21.425404644800967,
+        "Latitude": 66.57313696278567,
+        "station_name": "Pålkem_45"
+    },
+    {
+        "Longitude": 19.7081138877044,
+        "Latitude": 66.61810065981246,
+        "station_name": "Jokkmokk_101"
+    },
+    {
+        "Longitude": 19.8072167425424,
+        "Latitude": 66.63141009032462,
+        "station_name": "Jokkmokk_3"
+    },
+    {
+        "Longitude": 20.99623389016214,
+        "Latitude": 67.66738566059848,
+        "station_name": "Svappavaara_10"
+    },
+    {
+        "Longitude": 21.000041806649783,
+        "Latitude": 67.6686676632001,
+        "station_name": "Svappavaara_3"
+    },
+    {
+        "Longitude": 21.00428859259025,
+        "Latitude": 67.66903583103674,
+        "station_name": "Svappavaara_7"
+    },
+    {
+        "Longitude": 21.002997278547333,
+        "Latitude": 67.66952655898436,
+        "station_name": "Svappavaara_6"
+    },
+    {
+        "Longitude": 21.007920834517623,
+        "Latitude": 67.67031219408571,
+        "station_name": "Svappavaara_1"
+    },
+    {
+        "Longitude": 18.81184396293392,
+        "Latitude": 68.34449267662232,
+        "station_name": "Abisko_6"
+    },
+    {
+        "Longitude": 18.816445507181964,
+        "Latitude": 68.34799871197575,
+        "station_name": "Abisko_11"
+    },
+    {
+        "Longitude": 18.817731878140084,
+        "Latitude": 68.35197345183397,
+        "station_name": "Abisko_10"
+    },
+    {
+        "Longitude": 18.8153742098314,
+        "Latitude": 68.35277548165878,
+        "station_name": "Abisko_9"
+    },
+    {
+        "Longitude": 18.8153742098314,
+        "Latitude": 68.35277548165878,
+        "station_name": "Abisko_9"
+    },
+    {
+        "Longitude": 18.815553908949106,
+        "Latitude": 68.35428058765301,
+        "station_name": "Abisko_1"
+    },
+    {
+        "Longitude": 18.81645105741208,
+        "Latitude": 68.355202236739,
+        "station_name": "Abisko_5"
+    },
+    {
+        "Longitude": 18.8187479588001,
+        "Latitude": 68.35538393023775,
+        "station_name": "Abisko_8"
+    },
+    {
         "Longitude": 5.314731270332618,
         "Latitude": 51.26478291898094,
         "station_name": "GMW000000018014_1"
@@ -7370,1714 +8955,129 @@
         "station_name": "723-73-14"
     },
     {
-        "Longitude": 14.19440179862968,
-        "Latitude": 55.3869304276317,
-        "station_name": "Sweden_1"
-    },
-    {
-        "Longitude": 14.187942758578084,
-        "Latitude": 55.39061660466665,
-        "station_name": "Sweden_2"
-    },
-    {
-        "Longitude": 14.13812388254024,
-        "Latitude": 55.39215267782667,
-        "station_name": "Sweden_3"
-    },
-    {
-        "Longitude": 13.031977030063585,
-        "Latitude": 55.41251265751542,
-        "station_name": "Sweden_4"
-    },
-    {
-        "Longitude": 14.148299358497573,
-        "Latitude": 55.418197960606186,
-        "station_name": "Sweden_5"
-    },
-    {
-        "Longitude": 14.14185385449646,
-        "Latitude": 55.42848905865379,
-        "station_name": "Sweden_6"
-    },
-    {
-        "Longitude": 13.001081366449531,
-        "Latitude": 55.439170040882274,
-        "station_name": "Sweden_7"
-    },
-    {
-        "Longitude": 12.998150967004818,
-        "Latitude": 55.51553954794319,
-        "station_name": "Sweden_8"
-    },
-    {
-        "Longitude": 12.995616202479662,
-        "Latitude": 55.53199252125825,
-        "station_name": "Sweden_9"
-    },
-    {
-        "Longitude": 13.001152330862167,
-        "Latitude": 55.54568804406285,
-        "station_name": "Sweden_10"
-    },
-    {
-        "Longitude": 14.106745154745576,
-        "Latitude": 55.96211207586881,
-        "station_name": "Sweden_11"
-    },
-    {
-        "Longitude": 14.10809125027832,
-        "Latitude": 55.96278674397901,
-        "station_name": "Sweden_12"
-    },
-    {
-        "Longitude": 14.110889622138538,
-        "Latitude": 55.96300464071752,
-        "station_name": "Sweden_13"
-    },
-    {
-        "Longitude": 14.118328484500305,
-        "Latitude": 55.96373880993696,
-        "station_name": "Sweden_14"
-    },
-    {
-        "Longitude": 14.319459945107957,
-        "Latitude": 55.98487286958219,
-        "station_name": "Sweden_15"
-    },
-    {
-        "Longitude": 13.936028661640458,
-        "Latitude": 56.08273088989152,
-        "station_name": "Sweden_16"
-    },
-    {
-        "Longitude": 13.936028661640458,
-        "Latitude": 56.08273088989152,
-        "station_name": "Sweden_17"
-    },
-    {
-        "Longitude": 15.330292959134562,
-        "Latitude": 56.16782564110921,
-        "station_name": "Sweden_18"
-    },
-    {
-        "Longitude": 15.332463650574216,
-        "Latitude": 56.16785019109851,
-        "station_name": "Sweden_19"
-    },
-    {
-        "Longitude": 15.333103657530492,
-        "Latitude": 56.16928719715927,
-        "station_name": "Sweden_20"
-    },
-    {
-        "Longitude": 15.323603210006109,
-        "Latitude": 56.16942923164339,
-        "station_name": "Sweden_21"
-    },
-    {
-        "Longitude": 15.341762394667445,
-        "Latitude": 56.17450931234146,
-        "station_name": "Sweden_22"
-    },
-    {
-        "Longitude": 15.340587885087562,
-        "Latitude": 56.17479916684244,
-        "station_name": "Sweden_23"
-    },
-    {
-        "Longitude": 15.339550167692456,
-        "Latitude": 56.17484056565291,
-        "station_name": "Sweden_24"
-    },
-    {
-        "Longitude": 15.35360239881414,
-        "Latitude": 56.31437738211505,
-        "station_name": "Sweden_25"
-    },
-    {
-        "Longitude": 15.359108341676492,
-        "Latitude": 56.31461571793506,
-        "station_name": "Sweden_26"
-    },
-    {
-        "Longitude": 15.359003974558846,
-        "Latitude": 56.31462239944013,
-        "station_name": "Sweden_27"
-    },
-    {
-        "Longitude": 15.36053357238069,
-        "Latitude": 56.31568711926803,
-        "station_name": "Sweden_28"
-    },
-    {
-        "Longitude": 15.36053357238069,
-        "Latitude": 56.31568711926803,
-        "station_name": "Sweden_29"
-    },
-    {
-        "Longitude": 16.162574802568212,
-        "Latitude": 56.597342137282425,
-        "station_name": "Sweden_30"
-    },
-    {
-        "Longitude": 15.543097287710872,
-        "Latitude": 56.60501750021417,
-        "station_name": "Sweden_31"
-    },
-    {
-        "Longitude": 15.509546870409624,
-        "Latitude": 56.60612396317882,
-        "station_name": "Sweden_32"
-    },
-    {
-        "Longitude": 15.549967950517328,
-        "Latitude": 56.60649990475245,
-        "station_name": "Sweden_33"
-    },
-    {
-        "Longitude": 16.086134873359075,
-        "Latitude": 56.60742203629057,
-        "station_name": "Sweden_34"
-    },
-    {
-        "Longitude": 15.530934877523627,
-        "Latitude": 56.63973422372707,
-        "station_name": "Sweden_35"
-    },
-    {
-        "Longitude": 15.530730121244083,
-        "Latitude": 56.64024719406974,
-        "station_name": "Sweden_36"
-    },
-    {
-        "Longitude": 15.529297023741846,
-        "Latitude": 56.64037008948725,
-        "station_name": "Sweden_37"
-    },
-    {
-        "Longitude": 16.027719386863332,
-        "Latitude": 56.64301212057343,
-        "station_name": "Sweden_38"
-    },
-    {
-        "Longitude": 14.298498713469897,
-        "Latitude": 56.66015144346432,
-        "station_name": "Sweden_39"
-    },
-    {
-        "Longitude": 16.015628297381774,
-        "Latitude": 56.66638132871443,
-        "station_name": "Sweden_40"
-    },
-    {
-        "Longitude": 14.302824196326942,
-        "Latitude": 56.66676468647155,
-        "station_name": "Sweden_41"
-    },
-    {
-        "Longitude": 14.3046028253251,
-        "Latitude": 56.66726202528008,
-        "station_name": "Sweden_42"
-    },
-    {
-        "Longitude": 14.30460196260887,
-        "Latitude": 56.6672734304378,
-        "station_name": "Sweden_43"
-    },
-    {
-        "Longitude": 14.302736079694649,
-        "Latitude": 56.66879732507918,
-        "station_name": "Sweden_44"
-    },
-    {
-        "Longitude": 14.308338989476304,
-        "Latitude": 56.67006857043096,
-        "station_name": "Sweden_45"
-    },
-    {
-        "Longitude": 14.304802710088811,
-        "Latitude": 56.6700708928307,
-        "station_name": "Sweden_46"
-    },
-    {
-        "Longitude": 14.300731270711466,
-        "Latitude": 56.67114444553949,
-        "station_name": "Sweden_47"
-    },
-    {
-        "Longitude": 12.772440103955256,
-        "Latitude": 57.067489687542206,
-        "station_name": "Sweden_48"
-    },
-    {
-        "Longitude": 12.77778970169008,
-        "Latitude": 57.06988229045484,
-        "station_name": "Sweden_49"
-    },
-    {
-        "Longitude": 12.777476650530154,
-        "Latitude": 57.07115007377213,
-        "station_name": "Sweden_50"
-    },
-    {
-        "Longitude": 12.443750200198442,
-        "Latitude": 57.15116519605103,
-        "station_name": "Sweden_51"
-    },
-    {
-        "Longitude": 12.453285514135777,
-        "Latitude": 57.1773326274698,
-        "station_name": "Sweden_52"
-    },
-    {
-        "Longitude": 18.370241150153326,
-        "Latitude": 57.23521505136669,
-        "station_name": "Sweden_53"
-    },
-    {
-        "Longitude": 16.997758072875683,
-        "Latitude": 57.27710053951743,
-        "station_name": "Sweden_54"
-    },
-    {
-        "Longitude": 16.999783976866176,
-        "Latitude": 57.27897321814972,
-        "station_name": "Sweden_55"
-    },
-    {
-        "Longitude": 16.99925404183694,
-        "Latitude": 57.2789906339243,
-        "station_name": "Sweden_56"
-    },
-    {
-        "Longitude": 17.00255327504711,
-        "Latitude": 57.279824158880864,
-        "station_name": "Sweden_57"
-    },
-    {
-        "Longitude": 15.642867577997215,
-        "Latitude": 57.28224354545551,
-        "station_name": "Sweden_58"
-    },
-    {
-        "Longitude": 16.99136185520946,
-        "Latitude": 57.28612879587413,
-        "station_name": "Sweden_59"
-    },
-    {
-        "Longitude": 15.641545736265222,
-        "Latitude": 57.28767082668735,
-        "station_name": "Sweden_60"
-    },
-    {
-        "Longitude": 15.639774509524145,
-        "Latitude": 57.289368981225095,
-        "station_name": "Sweden_61"
-    },
-    {
-        "Longitude": 15.639380333325338,
-        "Latitude": 57.29099669419184,
-        "station_name": "Sweden_62"
-    },
-    {
-        "Longitude": 15.639706456781136,
-        "Latitude": 57.29162386678883,
-        "station_name": "Sweden_63"
-    },
-    {
-        "Longitude": 13.624294155460971,
-        "Latitude": 57.397368730293245,
-        "station_name": "Sweden_64"
-    },
-    {
-        "Longitude": 13.618349582720272,
-        "Latitude": 57.39919003554117,
-        "station_name": "Sweden_65"
-    },
-    {
-        "Longitude": 13.646207983366992,
-        "Latitude": 57.411771170873656,
-        "station_name": "Sweden_66"
-    },
-    {
-        "Longitude": 13.646236975347684,
-        "Latitude": 57.4120547462482,
-        "station_name": "Sweden_67"
-    },
-    {
-        "Longitude": 18.36770525848202,
-        "Latitude": 57.49354140548274,
-        "station_name": "Sweden_68"
-    },
-    {
-        "Longitude": 15.833019820570398,
-        "Latitude": 57.51152660928583,
-        "station_name": "Sweden_69"
-    },
-    {
-        "Longitude": 15.829170136199089,
-        "Latitude": 57.51189314008369,
-        "station_name": "Sweden_70"
-    },
-    {
-        "Longitude": 15.830303941456114,
-        "Latitude": 57.512131824352274,
-        "station_name": "Sweden_71"
-    },
-    {
-        "Longitude": 15.828161749210269,
-        "Latitude": 57.51256271732531,
-        "station_name": "Sweden_72"
-    },
-    {
-        "Longitude": 15.824636859493536,
-        "Latitude": 57.513474410256094,
-        "station_name": "Sweden_73"
-    },
-    {
-        "Longitude": 15.821066749341911,
-        "Latitude": 57.5145061331685,
-        "station_name": "Sweden_74"
-    },
-    {
-        "Longitude": 12.028100346873034,
-        "Latitude": 57.53288712321845,
-        "station_name": "Sweden_75"
-    },
-    {
-        "Longitude": 12.043328032203162,
-        "Latitude": 57.547370961879366,
-        "station_name": "Sweden_76"
-    },
-    {
-        "Longitude": 11.99673797351179,
-        "Latitude": 57.55132452946479,
-        "station_name": "Sweden_77"
-    },
-    {
-        "Longitude": 12.020793673583688,
-        "Latitude": 57.553779798127856,
-        "station_name": "Sweden_78"
-    },
-    {
-        "Longitude": 12.020220158318846,
-        "Latitude": 57.56177146146484,
-        "station_name": "Sweden_79"
-    },
-    {
-        "Longitude": 18.61078051812328,
-        "Latitude": 57.664836180602585,
-        "station_name": "Sweden_80"
-    },
-    {
-        "Longitude": 18.673785655036376,
-        "Latitude": 57.67537272743797,
-        "station_name": "Sweden_81"
-    },
-    {
-        "Longitude": 13.763623963139482,
-        "Latitude": 57.68119021827718,
-        "station_name": "Sweden_82"
-    },
-    {
-        "Longitude": 15.601695693080218,
-        "Latitude": 57.76055624136762,
-        "station_name": "Sweden_83"
-    },
-    {
-        "Longitude": 15.600925057929103,
-        "Latitude": 57.76065322708066,
-        "station_name": "Sweden_84"
-    },
-    {
-        "Longitude": 15.599778014769178,
-        "Latitude": 57.7611492907482,
-        "station_name": "Sweden_85"
-    },
-    {
-        "Longitude": 15.601046544657404,
-        "Latitude": 57.76206911837146,
-        "station_name": "Sweden_86"
-    },
-    {
-        "Longitude": 15.60022005280713,
-        "Latitude": 57.76217480821298,
-        "station_name": "Sweden_87"
-    },
-    {
-        "Longitude": 15.599259561659816,
-        "Latitude": 57.76219668982759,
-        "station_name": "Sweden_88"
-    },
-    {
-        "Longitude": 12.436184864545172,
-        "Latitude": 57.76399874890168,
-        "station_name": "Sweden_89"
-    },
-    {
-        "Longitude": 12.450660511732911,
-        "Latitude": 57.768368337214575,
-        "station_name": "Sweden_90"
-    },
-    {
-        "Longitude": 12.442508581205113,
-        "Latitude": 57.77529487349284,
-        "station_name": "Sweden_91"
-    },
-    {
-        "Longitude": 12.40157678826551,
-        "Latitude": 57.775898935678,
-        "station_name": "Sweden_92"
-    },
-    {
-        "Longitude": 12.425757453555802,
-        "Latitude": 57.776835347767104,
-        "station_name": "Sweden_93"
-    },
-    {
-        "Longitude": 12.438509719298391,
-        "Latitude": 57.78173090641319,
-        "station_name": "Sweden_94"
-    },
-    {
-        "Longitude": 12.43548598520465,
-        "Latitude": 57.78731067530641,
-        "station_name": "Sweden_95"
-    },
-    {
-        "Longitude": 12.428299797021186,
-        "Latitude": 57.78777187127603,
-        "station_name": "Sweden_96"
-    },
-    {
-        "Longitude": 15.73656490905832,
-        "Latitude": 57.79723531378529,
-        "station_name": "Sweden_97"
-    },
-    {
-        "Longitude": 15.739589774626698,
-        "Latitude": 57.798197896490585,
-        "station_name": "Sweden_98"
-    },
-    {
-        "Longitude": 11.835445217205317,
-        "Latitude": 57.81824702149989,
-        "station_name": "Sweden_99"
-    },
-    {
-        "Longitude": 11.828437811276814,
-        "Latitude": 57.81828217504534,
-        "station_name": "Sweden_100"
-    },
-    {
-        "Longitude": 11.852497950042194,
-        "Latitude": 57.81910051002056,
-        "station_name": "Sweden_101"
-    },
-    {
-        "Longitude": 11.811463928053046,
-        "Latitude": 57.82008904259892,
-        "station_name": "Sweden_102"
-    },
-    {
-        "Longitude": 11.819055447888532,
-        "Latitude": 57.82521088516874,
-        "station_name": "Sweden_103"
-    },
-    {
-        "Longitude": 11.833748847656484,
-        "Latitude": 57.8274887936021,
-        "station_name": "Sweden_104"
-    },
-    {
-        "Longitude": 11.779033596387665,
-        "Latitude": 57.836896299536285,
-        "station_name": "Sweden_105"
-    },
-    {
-        "Longitude": 15.510986048988272,
-        "Latitude": 57.96753246359754,
-        "station_name": "Sweden_106"
-    },
-    {
-        "Longitude": 15.509180758513178,
-        "Latitude": 57.97880541932758,
-        "station_name": "Sweden_107"
-    },
-    {
-        "Longitude": 15.592787652264168,
-        "Latitude": 57.98239620197993,
-        "station_name": "Sweden_108"
-    },
-    {
-        "Longitude": 15.529473712019294,
-        "Latitude": 57.98359436324557,
-        "station_name": "Sweden_109"
-    },
-    {
-        "Longitude": 15.561826052371906,
-        "Latitude": 57.98483437479651,
-        "station_name": "Sweden_110"
-    },
-    {
-        "Longitude": 15.515856498397415,
-        "Latitude": 57.98972867689727,
-        "station_name": "Sweden_111"
-    },
-    {
-        "Longitude": 13.12444385947527,
-        "Latitude": 58.03583443963785,
-        "station_name": "Sweden_112"
-    },
-    {
-        "Longitude": 13.115877875394675,
-        "Latitude": 58.03812421556804,
-        "station_name": "Sweden_113"
-    },
-    {
-        "Longitude": 11.50249219491912,
-        "Latitude": 58.3821113664474,
-        "station_name": "Sweden_114"
-    },
-    {
-        "Longitude": 11.518308851439876,
-        "Latitude": 58.383442639193,
-        "station_name": "Sweden_115"
-    },
-    {
-        "Longitude": 11.501683647095737,
-        "Latitude": 58.39248016492109,
-        "station_name": "Sweden_116"
-    },
-    {
-        "Longitude": 15.136556656411544,
-        "Latitude": 58.4110302975596,
-        "station_name": "Sweden_117"
-    },
-    {
-        "Longitude": 15.136451047125254,
-        "Latitude": 58.41124821102284,
-        "station_name": "Sweden_118"
-    },
-    {
-        "Longitude": 15.136453865293298,
-        "Latitude": 58.41126886543531,
-        "station_name": "Sweden_119"
-    },
-    {
-        "Longitude": 15.136489148518123,
-        "Latitude": 58.41149722699564,
-        "station_name": "Sweden_120"
-    },
-    {
-        "Longitude": 15.136132647738595,
-        "Latitude": 58.41322717016549,
-        "station_name": "Sweden_121"
-    },
-    {
-        "Longitude": 15.136114522375818,
-        "Latitude": 58.41323159034065,
-        "station_name": "Sweden_122"
-    },
-    {
-        "Longitude": 15.842034331590522,
-        "Latitude": 58.413902477196864,
-        "station_name": "Sweden_123"
-    },
-    {
-        "Longitude": 14.945778889279769,
-        "Latitude": 58.42270973019923,
-        "station_name": "Sweden_124"
-    },
-    {
-        "Longitude": 14.924932140164772,
-        "Latitude": 58.43051020900286,
-        "station_name": "Sweden_125"
-    },
-    {
-        "Longitude": 15.112209871947336,
-        "Latitude": 58.432672401525856,
-        "station_name": "Sweden_126"
-    },
-    {
-        "Longitude": 15.124065563502697,
-        "Latitude": 58.44117561896829,
-        "station_name": "Sweden_127"
-    },
-    {
-        "Longitude": 15.123179789647832,
-        "Latitude": 58.444157322114506,
-        "station_name": "Sweden_128"
-    },
-    {
-        "Longitude": 15.819012658968433,
-        "Latitude": 58.45478346706917,
-        "station_name": "Sweden_129"
-    },
-    {
-        "Longitude": 15.812204476299987,
-        "Latitude": 58.45701140767827,
-        "station_name": "Sweden_130"
-    },
-    {
-        "Longitude": 15.180796776199932,
-        "Latitude": 58.48271273193768,
-        "station_name": "Sweden_131"
-    },
-    {
-        "Longitude": 15.180761472018288,
-        "Latitude": 58.48271727236566,
-        "station_name": "Sweden_132"
-    },
-    {
-        "Longitude": 15.180738952909222,
-        "Latitude": 58.48307422458119,
-        "station_name": "Sweden_133"
-    },
-    {
-        "Longitude": 15.180583844903907,
-        "Latitude": 58.48315949670848,
-        "station_name": "Sweden_134"
-    },
-    {
-        "Longitude": 15.181000353809154,
-        "Latitude": 58.48391640043442,
-        "station_name": "Sweden_135"
-    },
-    {
-        "Longitude": 15.181966513552258,
-        "Latitude": 58.48967605458168,
-        "station_name": "Sweden_136"
-    },
-    {
-        "Longitude": 15.191014437366285,
-        "Latitude": 58.49616542692046,
-        "station_name": "Sweden_137"
-    },
-    {
-        "Longitude": 16.430678503171393,
-        "Latitude": 58.51320821832119,
-        "station_name": "Sweden_138"
-    },
-    {
-        "Longitude": 16.40460774915119,
-        "Latitude": 58.53490410855432,
-        "station_name": "Sweden_139"
-    },
-    {
-        "Longitude": 16.403227655831067,
-        "Latitude": 58.54389946650129,
-        "station_name": "Sweden_140"
-    },
-    {
-        "Longitude": 16.66888731779895,
-        "Latitude": 58.64336268178256,
-        "station_name": "Sweden_141"
-    },
-    {
-        "Longitude": 16.662147461250537,
-        "Latitude": 58.652819597586266,
-        "station_name": "Sweden_142"
-    },
-    {
-        "Longitude": 16.65404919868829,
-        "Latitude": 58.65457938733583,
-        "station_name": "Sweden_143"
-    },
-    {
-        "Longitude": 16.665220196762423,
-        "Latitude": 58.65567963397554,
-        "station_name": "Sweden_144"
-    },
-    {
-        "Longitude": 14.322867693377004,
-        "Latitude": 58.72037571184122,
-        "station_name": "Sweden_145"
-    },
-    {
-        "Longitude": 14.34598151666924,
-        "Latitude": 58.755985243145226,
-        "station_name": "Sweden_146"
-    },
-    {
-        "Longitude": 14.30335547083253,
-        "Latitude": 58.774290408187134,
-        "station_name": "Sweden_147"
-    },
-    {
-        "Longitude": 14.302742703618913,
-        "Latitude": 58.77444902999332,
-        "station_name": "Sweden_148"
-    },
-    {
-        "Longitude": 14.338355553930777,
-        "Latitude": 58.78073458385451,
-        "station_name": "Sweden_149"
-    },
-    {
-        "Longitude": 14.354140402557787,
-        "Latitude": 58.78389512204235,
-        "station_name": "Sweden_150"
-    },
-    {
-        "Longitude": 14.317746475176367,
-        "Latitude": 58.78560285951977,
-        "station_name": "Sweden_151"
-    },
-    {
-        "Longitude": 14.352806580305012,
-        "Latitude": 58.78585532399984,
-        "station_name": "Sweden_152"
-    },
-    {
-        "Longitude": 14.355031944084825,
-        "Latitude": 58.78618979004232,
-        "station_name": "Sweden_153"
-    },
-    {
-        "Longitude": 14.298211770827828,
-        "Latitude": 58.79524274861736,
-        "station_name": "Sweden_154"
-    },
-    {
-        "Longitude": 12.135299564890198,
-        "Latitude": 58.8091103470544,
-        "station_name": "Sweden_155"
-    },
-    {
-        "Longitude": 12.145585753442454,
-        "Latitude": 58.81166380294047,
-        "station_name": "Sweden_156"
-    },
-    {
-        "Longitude": 12.139424102320618,
-        "Latitude": 58.82525923023066,
-        "station_name": "Sweden_157"
-    },
-    {
-        "Longitude": 12.15540028709932,
-        "Latitude": 58.83846595895851,
-        "station_name": "Sweden_158"
-    },
-    {
-        "Longitude": 11.746777371676696,
-        "Latitude": 58.987641945958735,
-        "station_name": "Sweden_159"
-    },
-    {
-        "Longitude": 11.744120877420198,
-        "Latitude": 58.98885134401862,
-        "station_name": "Sweden_160"
-    },
-    {
-        "Longitude": 11.748491939173102,
-        "Latitude": 58.98940164990755,
-        "station_name": "Sweden_161"
-    },
-    {
-        "Longitude": 11.747620441733654,
-        "Latitude": 58.98996393074387,
-        "station_name": "Sweden_162"
-    },
-    {
-        "Longitude": 15.049816314045014,
-        "Latitude": 59.01544845406854,
-        "station_name": "Sweden_163"
-    },
-    {
-        "Longitude": 15.031827106644322,
-        "Latitude": 59.02434152055164,
-        "station_name": "Sweden_164"
-    },
-    {
-        "Longitude": 15.008875315787478,
-        "Latitude": 59.03160711236335,
-        "station_name": "Sweden_165"
-    },
-    {
-        "Longitude": 15.044510689541807,
-        "Latitude": 59.0491022269589,
-        "station_name": "Sweden_166"
-    },
-    {
-        "Longitude": 15.042517480048057,
-        "Latitude": 59.051481491353215,
-        "station_name": "Sweden_167"
-    },
-    {
-        "Longitude": 18.09507275012621,
-        "Latitude": 59.0848366792394,
-        "station_name": "Sweden_168"
-    },
-    {
-        "Longitude": 18.09829072835341,
-        "Latitude": 59.08824414184823,
-        "station_name": "Sweden_169"
-    },
-    {
-        "Longitude": 12.119592731401292,
-        "Latitude": 59.17244601930325,
-        "station_name": "Sweden_170"
-    },
-    {
-        "Longitude": 12.117478966619815,
-        "Latitude": 59.17721964152959,
-        "station_name": "Sweden_171"
-    },
-    {
-        "Longitude": 12.122977810204237,
-        "Latitude": 59.17819243372734,
-        "station_name": "Sweden_172"
-    },
-    {
-        "Longitude": 12.132653871057943,
-        "Latitude": 59.183586964181806,
-        "station_name": "Sweden_173"
-    },
-    {
-        "Longitude": 17.684560184571644,
-        "Latitude": 59.231879331296845,
-        "station_name": "Sweden_174"
-    },
-    {
-        "Longitude": 17.7012791814083,
-        "Latitude": 59.25164847934545,
-        "station_name": "Sweden_175"
-    },
-    {
-        "Longitude": 17.608317158433117,
-        "Latitude": 59.2574878373592,
-        "station_name": "Sweden_176"
-    },
-    {
-        "Longitude": 17.605983038366,
-        "Latitude": 59.27870969342598,
-        "station_name": "Sweden_177"
-    },
-    {
-        "Longitude": 16.690067630891466,
-        "Latitude": 59.34876235251744,
-        "station_name": "Sweden_178"
-    },
-    {
-        "Longitude": 16.696405913351256,
-        "Latitude": 59.36403779382694,
-        "station_name": "Sweden_179"
-    },
-    {
-        "Longitude": 18.23670080159305,
-        "Latitude": 59.38926171353297,
-        "station_name": "Sweden_180"
-    },
-    {
-        "Longitude": 18.272301379147464,
-        "Latitude": 59.3930461394121,
-        "station_name": "Sweden_181"
-    },
-    {
-        "Longitude": 18.196606526480043,
-        "Latitude": 59.3965723598928,
-        "station_name": "Sweden_182"
-    },
-    {
-        "Longitude": 18.18723079669612,
-        "Latitude": 59.397888190567095,
-        "station_name": "Sweden_183"
-    },
-    {
-        "Longitude": 18.16912938392242,
-        "Latitude": 59.40190985596052,
-        "station_name": "Sweden_184"
-    },
-    {
-        "Longitude": 18.221194161536395,
-        "Latitude": 59.40454655609855,
-        "station_name": "Sweden_185"
-    },
-    {
-        "Longitude": 18.24727731884826,
-        "Latitude": 59.40540860600854,
-        "station_name": "Sweden_186"
-    },
-    {
-        "Longitude": 18.1804678326286,
-        "Latitude": 59.4067490853076,
-        "station_name": "Sweden_187"
-    },
-    {
-        "Longitude": 18.201144324291512,
-        "Latitude": 59.40743307904972,
-        "station_name": "Sweden_188"
-    },
-    {
-        "Longitude": 18.227170345868863,
-        "Latitude": 59.41002553775814,
-        "station_name": "Sweden_189"
-    },
-    {
-        "Longitude": 18.194123107160262,
-        "Latitude": 59.41286187751477,
-        "station_name": "Sweden_190"
-    },
-    {
-        "Longitude": 18.17278927333231,
-        "Latitude": 59.4135772049934,
-        "station_name": "Sweden_191"
-    },
-    {
-        "Longitude": 18.17078434662732,
-        "Latitude": 59.419658193390575,
-        "station_name": "Sweden_192"
-    },
-    {
-        "Longitude": 18.177947953213728,
-        "Latitude": 59.42086621897241,
-        "station_name": "Sweden_193"
-    },
-    {
-        "Longitude": 18.20982459609593,
-        "Latitude": 59.42225324416997,
-        "station_name": "Sweden_194"
-    },
-    {
-        "Longitude": 13.888133578788644,
-        "Latitude": 59.60457348274212,
-        "station_name": "Sweden_195"
-    },
-    {
-        "Longitude": 13.885205720491092,
-        "Latitude": 59.604701278617554,
-        "station_name": "Sweden_196"
-    },
-    {
-        "Longitude": 13.881891401719582,
-        "Latitude": 59.60549539860676,
-        "station_name": "Sweden_197"
-    },
-    {
-        "Longitude": 13.884873056066118,
-        "Latitude": 59.60565039547324,
-        "station_name": "Sweden_198"
-    },
-    {
-        "Longitude": 13.880191741952297,
-        "Latitude": 59.60628402434841,
-        "station_name": "Sweden_199"
-    },
-    {
-        "Longitude": 13.878014664289388,
-        "Latitude": 59.60939964678387,
-        "station_name": "Sweden_200"
-    },
-    {
-        "Longitude": 13.878558701770087,
-        "Latitude": 59.61387279812577,
-        "station_name": "Sweden_201"
-    },
-    {
-        "Longitude": 15.431308732619373,
-        "Latitude": 59.62205033165114,
-        "station_name": "Sweden_202"
-    },
-    {
-        "Longitude": 15.431308444892156,
-        "Latitude": 59.6220693699989,
-        "station_name": "Sweden_203"
-    },
-    {
-        "Longitude": 15.431988191190078,
-        "Latitude": 59.62229818494667,
-        "station_name": "Sweden_204"
-    },
-    {
-        "Longitude": 15.431911665177656,
-        "Latitude": 59.62237144371832,
-        "station_name": "Sweden_205"
-    },
-    {
-        "Longitude": 15.433799645001733,
-        "Latitude": 59.62260991271741,
-        "station_name": "Sweden_206"
-    },
-    {
-        "Longitude": 15.43283773107822,
-        "Latitude": 59.622675412562266,
-        "station_name": "Sweden_207"
-    },
-    {
-        "Longitude": 17.64713759679507,
-        "Latitude": 59.65180213366639,
-        "station_name": "Sweden_208"
-    },
-    {
-        "Longitude": 17.091346762322512,
-        "Latitude": 59.74208181976369,
-        "station_name": "Sweden_209"
-    },
-    {
-        "Longitude": 16.502933752899708,
-        "Latitude": 59.837631019622215,
-        "station_name": "Sweden_210"
-    },
-    {
-        "Longitude": 16.4814396907387,
-        "Latitude": 59.85018712029527,
-        "station_name": "Sweden_211"
-    },
-    {
-        "Longitude": 16.87951052456796,
-        "Latitude": 60.07571217246696,
-        "station_name": "Sweden_212"
-    },
-    {
-        "Longitude": 16.87951005564225,
-        "Latitude": 60.07571972366257,
-        "station_name": "Sweden_213"
-    },
-    {
-        "Longitude": 16.876793731643918,
-        "Latitude": 60.10529074590195,
-        "station_name": "Sweden_214"
-    },
-    {
-        "Longitude": 16.888832777513745,
-        "Latitude": 60.1112541359627,
-        "station_name": "Sweden_215"
-    },
-    {
-        "Longitude": 16.87320529642602,
-        "Latitude": 60.12563326912332,
-        "station_name": "Sweden_216"
-    },
-    {
-        "Longitude": 16.915730513395204,
-        "Latitude": 60.12816586428293,
-        "station_name": "Sweden_217"
-    },
-    {
-        "Longitude": 16.8862801199878,
-        "Latitude": 60.1326589877393,
-        "station_name": "Sweden_218"
-    },
-    {
-        "Longitude": 16.890891043721727,
-        "Latitude": 60.13560041952939,
-        "station_name": "Sweden_219"
-    },
-    {
-        "Longitude": 16.918524126292837,
-        "Latitude": 60.13732258731992,
-        "station_name": "Sweden_220"
-    },
-    {
-        "Longitude": 16.501032552339083,
-        "Latitude": 60.81791532521955,
-        "station_name": "Sweden_221"
-    },
-    {
-        "Longitude": 16.50610517858281,
-        "Latitude": 60.821039459561625,
-        "station_name": "Sweden_222"
-    },
-    {
-        "Longitude": 14.331754281369031,
-        "Latitude": 60.87545282875559,
-        "station_name": "Sweden_223"
-    },
-    {
-        "Longitude": 14.362600807453166,
-        "Latitude": 60.879017695460085,
-        "station_name": "Sweden_224"
-    },
-    {
-        "Longitude": 14.361540986111056,
-        "Latitude": 60.879098234390455,
-        "station_name": "Sweden_225"
-    },
-    {
-        "Longitude": 14.362391177571364,
-        "Latitude": 60.88022815244577,
-        "station_name": "Sweden_226"
-    },
-    {
-        "Longitude": 14.38345702133398,
-        "Latitude": 60.8805956787342,
-        "station_name": "Sweden_227"
-    },
-    {
-        "Longitude": 16.65891305618678,
-        "Latitude": 61.36543266712541,
-        "station_name": "Sweden_228"
-    },
-    {
-        "Longitude": 14.170896546722064,
-        "Latitude": 61.92002634383467,
-        "station_name": "Sweden_229"
-    },
-    {
-        "Longitude": 14.178860791727992,
-        "Latitude": 61.929194877971504,
-        "station_name": "Sweden_230"
-    },
-    {
-        "Longitude": 14.2070674730054,
-        "Latitude": 61.93747543905898,
-        "station_name": "Sweden_231"
-    },
-    {
-        "Longitude": 14.256167641179294,
-        "Latitude": 61.99728138541529,
-        "station_name": "Sweden_232"
-    },
-    {
-        "Longitude": 14.3441445508564,
-        "Latitude": 62.01466156429552,
-        "station_name": "Sweden_233"
-    },
-    {
-        "Longitude": 16.21202387200163,
-        "Latitude": 62.697203521287456,
-        "station_name": "Sweden_234"
-    },
-    {
-        "Longitude": 16.251496717981848,
-        "Latitude": 62.71243992331485,
-        "station_name": "Sweden_235"
-    },
-    {
-        "Longitude": 16.24430769643983,
-        "Latitude": 62.71292869489646,
-        "station_name": "Sweden_236"
-    },
-    {
-        "Longitude": 16.24732156896387,
-        "Latitude": 62.713029065510746,
-        "station_name": "Sweden_237"
-    },
-    {
-        "Longitude": 16.24022000992712,
-        "Latitude": 62.71494246618735,
-        "station_name": "Sweden_238"
-    },
-    {
-        "Longitude": 16.215500590836246,
-        "Latitude": 62.7178907232242,
-        "station_name": "Sweden_239"
-    },
-    {
-        "Longitude": 16.21393098270284,
-        "Latitude": 62.7181145379128,
-        "station_name": "Sweden_240"
-    },
-    {
-        "Longitude": 16.250924688921472,
-        "Latitude": 62.73709472238575,
-        "station_name": "Sweden_241"
-    },
-    {
-        "Longitude": 17.015461296433283,
-        "Latitude": 63.06190038043884,
-        "station_name": "Sweden_242"
-    },
-    {
-        "Longitude": 17.0157497710575,
-        "Latitude": 63.06216526977622,
-        "station_name": "Sweden_243"
-    },
-    {
-        "Longitude": 17.01528192371184,
-        "Latitude": 63.062357423848965,
-        "station_name": "Sweden_244"
-    },
-    {
-        "Longitude": 12.11480247503788,
-        "Latitude": 63.30026854256132,
-        "station_name": "Sweden_245"
-    },
-    {
-        "Longitude": 12.118921816304685,
-        "Latitude": 63.300669434263845,
-        "station_name": "Sweden_246"
-    },
-    {
-        "Longitude": 14.189537930213536,
-        "Latitude": 63.31238150331248,
-        "station_name": "Sweden_247"
-    },
-    {
-        "Longitude": 14.184937599676791,
-        "Latitude": 63.31592705038588,
-        "station_name": "Sweden_248"
-    },
-    {
-        "Longitude": 14.127269934858427,
-        "Latitude": 63.31657063775201,
-        "station_name": "Sweden_249"
-    },
-    {
-        "Longitude": 14.154623311051449,
-        "Latitude": 63.31690308912764,
-        "station_name": "Sweden_250"
-    },
-    {
-        "Longitude": 14.186681669048305,
-        "Latitude": 63.318544996729706,
-        "station_name": "Sweden_251"
-    },
-    {
-        "Longitude": 13.024086254304391,
-        "Latitude": 63.73745053423048,
-        "station_name": "Sweden_252"
-    },
-    {
-        "Longitude": 13.099571784562754,
-        "Latitude": 63.77811315891455,
-        "station_name": "Sweden_253"
-    },
-    {
-        "Longitude": 17.331790717244044,
-        "Latitude": 63.9145417455162,
-        "station_name": "Sweden_254"
-    },
-    {
-        "Longitude": 17.194144589108788,
-        "Latitude": 64.00453754620901,
-        "station_name": "Sweden_255"
-    },
-    {
-        "Longitude": 17.229601110009334,
-        "Latitude": 64.00708475945478,
-        "station_name": "Sweden_256"
-    },
-    {
-        "Longitude": 20.49273684864649,
-        "Latitude": 64.01055683496467,
-        "station_name": "Sweden_257"
-    },
-    {
-        "Longitude": 20.49539705676004,
-        "Latitude": 64.01091777601555,
-        "station_name": "Sweden_258"
-    },
-    {
-        "Longitude": 17.258260138438096,
-        "Latitude": 64.0131202867331,
-        "station_name": "Sweden_259"
-    },
-    {
-        "Longitude": 19.57322496607351,
-        "Latitude": 64.18608708539585,
-        "station_name": "Sweden_260"
-    },
-    {
-        "Longitude": 19.57384112816555,
-        "Latitude": 64.18657126910125,
-        "station_name": "Sweden_261"
-    },
-    {
-        "Longitude": 19.77376113924072,
-        "Latitude": 64.25129170593524,
-        "station_name": "Sweden_262"
-    },
-    {
-        "Longitude": 19.77970540327604,
-        "Latitude": 64.25505411110093,
-        "station_name": "Sweden_263"
-    },
-    {
-        "Longitude": 19.77970540327604,
-        "Latitude": 64.25505411110093,
-        "station_name": "Sweden_264"
-    },
-    {
-        "Longitude": 19.779161086119228,
-        "Latitude": 64.25513489233248,
-        "station_name": "Sweden_265"
-    },
-    {
-        "Longitude": 19.780310546803,
-        "Latitude": 64.25520515885297,
-        "station_name": "Sweden_266"
-    },
-    {
-        "Longitude": 16.058109096851044,
-        "Latitude": 64.40317103355217,
-        "station_name": "Sweden_267"
-    },
-    {
-        "Longitude": 15.851851274575498,
-        "Latitude": 64.56638981087289,
-        "station_name": "Sweden_268"
-    },
-    {
-        "Longitude": 16.002008613285494,
-        "Latitude": 64.80023668296833,
-        "station_name": "Sweden_269"
-    },
-    {
-        "Longitude": 15.903612541497353,
-        "Latitude": 64.8539552261153,
-        "station_name": "Sweden_270"
-    },
-    {
-        "Longitude": 20.99294307473109,
-        "Latitude": 64.90024018965444,
-        "station_name": "Sweden_271"
-    },
-    {
-        "Longitude": 20.98894789411172,
-        "Latitude": 64.90046780673667,
-        "station_name": "Sweden_272"
-    },
-    {
-        "Longitude": 15.870118582825404,
-        "Latitude": 64.91226092004877,
-        "station_name": "Sweden_273"
-    },
-    {
-        "Longitude": 14.209626517973698,
-        "Latitude": 64.9146820719934,
-        "station_name": "Sweden_274"
-    },
-    {
-        "Longitude": 20.957797737989043,
-        "Latitude": 64.9150756682853,
-        "station_name": "Sweden_275"
-    },
-    {
-        "Longitude": 17.112964155303533,
-        "Latitude": 64.9828440034976,
-        "station_name": "Sweden_276"
-    },
-    {
-        "Longitude": 17.080048075296467,
-        "Latitude": 64.99432600163962,
-        "station_name": "Sweden_277"
-    },
-    {
-        "Longitude": 17.07190370094305,
-        "Latitude": 64.99613275259406,
-        "station_name": "Sweden_278"
-    },
-    {
-        "Longitude": 17.07196593724942,
-        "Latitude": 65.00528592111279,
-        "station_name": "Sweden_279"
-    },
-    {
-        "Longitude": 17.058799578084756,
-        "Latitude": 65.0295669187371,
-        "station_name": "Sweden_280"
-    },
-    {
-        "Longitude": 22.092809381538903,
-        "Latitude": 65.56230942536625,
-        "station_name": "Sweden_281"
-    },
-    {
-        "Longitude": 15.03849851008131,
-        "Latitude": 65.96075290427186,
-        "station_name": "Sweden_282"
-    },
-    {
-        "Longitude": 15.061250745475904,
-        "Latitude": 65.97207671295705,
-        "station_name": "Sweden_283"
-    },
-    {
-        "Longitude": 18.104472791552244,
-        "Latitude": 65.98448550678138,
-        "station_name": "Sweden_284"
-    },
-    {
-        "Longitude": 18.115491930016766,
-        "Latitude": 65.99639416919696,
-        "station_name": "Sweden_285"
-    },
-    {
-        "Longitude": 18.1389624175011,
-        "Latitude": 65.99664570974419,
-        "station_name": "Sweden_286"
-    },
-    {
-        "Longitude": 18.12516849825547,
-        "Latitude": 65.99922319610704,
-        "station_name": "Sweden_287"
-    },
-    {
-        "Longitude": 18.12638723929578,
-        "Latitude": 66.00024206768012,
-        "station_name": "Sweden_288"
-    },
-    {
-        "Longitude": 18.12780210057049,
-        "Latitude": 66.00226968207564,
-        "station_name": "Sweden_289"
-    },
-    {
-        "Longitude": 21.865734006209884,
-        "Latitude": 66.27738969285681,
-        "station_name": "Sweden_290"
-    },
-    {
-        "Longitude": 21.87986589764458,
-        "Latitude": 66.32309578388693,
-        "station_name": "Sweden_291"
-    },
-    {
-        "Longitude": 21.852529260544355,
-        "Latitude": 66.3568764517269,
-        "station_name": "Sweden_292"
-    },
-    {
-        "Longitude": 21.575501138572605,
-        "Latitude": 66.38766124499665,
-        "station_name": "Sweden_293"
-    },
-    {
-        "Longitude": 21.57785178416958,
-        "Latitude": 66.38819725981128,
-        "station_name": "Sweden_294"
-    },
-    {
-        "Longitude": 21.576994699197847,
-        "Latitude": 66.38880066627577,
-        "station_name": "Sweden_295"
-    },
-    {
-        "Longitude": 21.773636825615974,
-        "Latitude": 66.40530466340542,
-        "station_name": "Sweden_296"
-    },
-    {
-        "Longitude": 21.699266437844567,
-        "Latitude": 66.41569799617186,
-        "station_name": "Sweden_297"
-    },
-    {
-        "Longitude": 21.745133834032604,
-        "Latitude": 66.41745403877408,
-        "station_name": "Sweden_298"
-    },
-    {
-        "Longitude": 21.59730775001915,
-        "Latitude": 66.48530764405955,
-        "station_name": "Sweden_299"
-    },
-    {
-        "Longitude": 21.55578028048128,
-        "Latitude": 66.49829115920298,
-        "station_name": "Sweden_300"
-    },
-    {
-        "Longitude": 21.51824357435892,
-        "Latitude": 66.51809533915407,
-        "station_name": "Sweden_301"
-    },
-    {
-        "Longitude": 21.425404644800967,
-        "Latitude": 66.57313696278567,
-        "station_name": "Sweden_302"
-    },
-    {
-        "Longitude": 19.7081138877044,
-        "Latitude": 66.61810065981246,
-        "station_name": "Sweden_303"
-    },
-    {
-        "Longitude": 19.8072167425424,
-        "Latitude": 66.63141009032462,
-        "station_name": "Sweden_304"
-    },
-    {
-        "Longitude": 20.99623389016214,
-        "Latitude": 67.66738566059848,
-        "station_name": "Sweden_305"
-    },
-    {
-        "Longitude": 21.000041806649783,
-        "Latitude": 67.6686676632001,
-        "station_name": "Sweden_306"
-    },
-    {
-        "Longitude": 21.00428859259025,
-        "Latitude": 67.66903583103674,
-        "station_name": "Sweden_307"
-    },
-    {
-        "Longitude": 21.002997278547333,
-        "Latitude": 67.66952655898436,
-        "station_name": "Sweden_308"
-    },
-    {
-        "Longitude": 21.007920834517623,
-        "Latitude": 67.67031219408571,
-        "station_name": "Sweden_309"
-    },
-    {
-        "Longitude": 18.81184396293392,
-        "Latitude": 68.34449267662232,
-        "station_name": "Sweden_310"
-    },
-    {
-        "Longitude": 18.816445507181964,
-        "Latitude": 68.34799871197575,
-        "station_name": "Sweden_311"
-    },
-    {
-        "Longitude": 18.817731878140084,
-        "Latitude": 68.35197345183397,
-        "station_name": "Sweden_312"
-    },
-    {
-        "Longitude": 18.8153742098314,
-        "Latitude": 68.35277548165878,
-        "station_name": "Sweden_313"
-    },
-    {
-        "Longitude": 18.8153742098314,
-        "Latitude": 68.35277548165878,
-        "station_name": "Sweden_314"
-    },
-    {
-        "Longitude": 18.815553908949106,
-        "Latitude": 68.35428058765301,
-        "station_name": "Sweden_315"
-    },
-    {
-        "Longitude": 18.81645105741208,
-        "Latitude": 68.355202236739,
-        "station_name": "Sweden_316"
-    },
-    {
-        "Longitude": 18.8187479588001,
-        "Latitude": 68.35538393023775,
-        "station_name": "Sweden_317"
-    },
-    {
         "Longitude": 7.12432,
         "Latitude": 58.04408,
-        "station_name": "Norway_1"
+        "station_name": "Lindesnes rør 4"
     },
     {
         "Longitude": 8.24018,
         "Latitude": 58.29887,
-        "station_name": "Norway_2"
+        "station_name": "Birkenes rør 4"
     },
     {
         "Longitude": 7.75828,
         "Latitude": 58.5091,
-        "station_name": "Norway_3"
+        "station_name": "Evje rør 1"
     },
     {
         "Longitude": 5.52241,
         "Latitude": 58.73663,
-        "station_name": "Norway_4"
+        "station_name": "Jæren rør 2"
     },
     {
         "Longitude": 8.51287,
         "Latitude": 58.75111,
-        "station_name": "Norway_5"
+        "station_name": "Stigvassåi rør 6"
     },
     {
         "Longitude": 9.07969,
         "Latitude": 59.43994,
-        "station_name": "Norway_6"
+        "station_name": "Eikamoen rør 9"
     },
     {
         "Longitude": 8.31427,
         "Latitude": 59.83572,
-        "station_name": "Norway_7"
+        "station_name": "Groset grunnvannsrør 1A"
     },
     {
         "Longitude": 9.94941,
         "Latitude": 59.94908,
-        "station_name": "Norway_8"
+        "station_name": "Modum rør 12"
     },
     {
         "Longitude": 12.17115,
         "Latitude": 59.95541,
-        "station_name": "Norway_9"
+        "station_name": "Magnor rør 7"
     },
     {
         "Longitude": 11.19602,
         "Latitude": 60.18752,
-        "station_name": "Norway_10"
+        "station_name": "Hauerseter"
     },
     {
         "Longitude": 5.34906,
         "Latitude": 60.26075,
-        "station_name": "Norway_11"
+        "station_name": "Fana rør 2"
     },
     {
         "Longitude": 11.87382,
         "Latitude": 60.64668,
-        "station_name": "Norway_12"
+        "station_name": "Haslemoen rør 9"
     },
     {
         "Longitude": 10.80547,
         "Latitude": 60.77324,
-        "station_name": "Norway_13"
+        "station_name": "Kise"
     },
     {
         "Longitude": 8.83801,
         "Latitude": 61.33834,
-        "station_name": "Norway_14"
+        "station_name": "Lykjestøylane rør 1"
     },
     {
         "Longitude": 9.18579,
         "Latitude": 61.39167,
-        "station_name": "Norway_15"
+        "station_name": "øyangen rør 2"
     },
     {
         "Longitude": 11.87825,
         "Latitude": 61.4065,
-        "station_name": "Norway_16"
+        "station_name": "Stenerseter rør"
     },
     {
         "Longitude": 5.99522,
         "Latitude": 61.43945,
-        "station_name": "Norway_17"
+        "station_name": "Førde/Moskog rør 3"
     },
     {
         "Longitude": 9.32059,
         "Latitude": 61.46359,
-        "station_name": "Norway_18"
+        "station_name": "Finnbølseter rør 1"
     },
     {
         "Longitude": 6.09229,
         "Latitude": 61.91808,
-        "station_name": "Norway_19"
+        "station_name": "Nordfjordeid rør 1"
     },
     {
         "Longitude": 9.03141,
         "Latitude": 62.07959,
-        "station_name": "Norway_20"
+        "station_name": "Dombås rør 2"
     },
     {
         "Longitude": 10.01163,
         "Latitude": 62.33552,
-        "station_name": "Norway_21"
+        "station_name": "Settalbekken rør 4"
     },
     {
         "Longitude": 11.5576,
         "Latitude": 62.68967,
-        "station_name": "Norway_22"
+        "station_name": "Abrahamsvoll"
     },
     {
         "Longitude": 8.88056,
         "Latitude": 62.78322,
-        "station_name": "Norway_23"
+        "station_name": "Kårvatn rør 2"
     },
     {
         "Longitude": 17.41894,
         "Latitude": 68.2431,
-        "station_name": "Norway_24"
+        "station_name": "Skjomen rør 1"
     },
     {
         "Longitude": 19.35364,
         "Latitude": 69.02219,
-        "station_name": "Norway_25"
+        "station_name": "øverbygd rør 2"
     },
     {
         "Longitude": -1.2057196058031172,
